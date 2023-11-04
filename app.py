@@ -1,6 +1,5 @@
-#import requests
 import streamlit as st
-#from streamlit_lottie import st_lottie
+import lottie
 
 st.set_page_config(page_title="StudiFood", page_icon="✅")
 
@@ -13,17 +12,13 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    def load_lottieur(url):
-        r = requests.get(url)
-        if r.status_code != 200:
-            return None
-        return r.json()
-
+    # Load the Lottie animation from a URL
     lottie_url = "https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json"
     lottie_json = lottie.load(lottie_url)
 
+    # Display the Lottie animation in Streamlit
     st_lottie = st.lottie(lottie_json, height=300, key="coding")
-    
+
 
 if page == 'Page 2':
     st.header("Menu Selection")
