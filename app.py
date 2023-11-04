@@ -160,4 +160,33 @@ if page == 'Page 3':
     st.header("Cart")
     st.write("View your previous orders and their status")
 
+df =pd.DataFrame({
+            "source_number":
+             [11199,11328,11287,32345,12342,1232,13456,123244,13456],
+             "location":          
+             ["loc2","loc1","loc3","loc1","loc2","loc2","loc3","loc2","loc1"],
+              "category": 
+             ["cat1","cat2","cat1","cat3","cat3","cat3","cat2","cat3","cat2"],
+             })  
 
+is_check = st.checkbox("Display Data")
+if is_check:
+    st.table(df)
+
+
+columns = st.sidebar.multiselect("Enter the variables", df.columns)
+
+sidebars = {}
+for y in columns:
+    ucolumns=list(df[y].unique())
+    print (ucolumns)
+
+    sidebars[y]=st.sidebar.multiselect('Filter '+y, ucolumns)   
+
+if bool(sidebars):
+    L = [df[k].isin(v) if isinstance(v, list) 
+         else df[k].eq(v) 
+         for k, v in sidebars.items() if k in df.columns]
+    
+    df1 = df[np.logical_and.reduce(L)]
+    st.table(df1)  
