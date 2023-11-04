@@ -4,42 +4,6 @@ import pandas as pd
 # Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #ffffff; /* White background */
-        font-family: 'Arial', sans-serif;
-    }
-    .stSidebar .sidebar-content {
-        background-color: #f2f2f2; /* Light gray for sidebar */
-        color: #333; /* Dark gray text color */
-    }
-    .stSidebar .sidebar-content a {
-        color: #3498db; /* Blue text color for sidebar links */
-    }
-    .stMain {
-        background-color: #ffffff; /* White main content background */
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    .stMarkdown a {
-        color: #3498db; /* Blue links in Markdown */
-    }
-    .stButton {
-        background-color: #3498db; /* Blue buttons */
-        color: #fff; /* White text on buttons */
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
-    .stButton:hover {
-        background-color: #2980b9; /* Darker blue on button hover */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 st.title("StudiFood")
 
 st.sidebar.header("Navigation")
