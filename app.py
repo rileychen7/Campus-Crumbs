@@ -7,23 +7,12 @@ st.set_page_config(page_title="StudiFood", page_icon="🍔")
 st.markdown(
     """
     <style>
-    .stApp {
+    body {
         background-color: #3498db; /* Blue background */
     }
-    .stSidebar .sidebar-content {
+    .stSidebar {
         background-color: #2980b9; /* Darker blue for sidebar */
-        color: #fff; /* White text color */
-    }
-    .stSidebar .sidebar-content a {
-        color: #fff; /* White text color for sidebar links */
-    }
-    .stMain {
-        background-color: #fff; /* White main content background */
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .stMarkdown a {
-        color: #3498db; /* Blue links in Markdown */
+        color: #fff; /* White text color for sidebar content */
     }
     .stButton {
         background-color: #3498db; /* Blue buttons */
@@ -31,6 +20,9 @@ st.markdown(
     }
     .stButton:hover {
         background-color: #2980b9; /* Darker blue on button hover */
+    }
+    .stMarkdown a {
+        color: #3498db; /* Blue links in Markdown */
     }
     </style>
     """,
