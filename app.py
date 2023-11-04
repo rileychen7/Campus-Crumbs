@@ -14,7 +14,7 @@ if page == 'Page 1':
 background_image = """
 <style>
     body {
-        background-image: url("tikka.png");
+        background-image: url("panasia.png");
         background-size: cover;
     }
 </style>
