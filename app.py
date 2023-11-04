@@ -21,7 +21,7 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    def load_lottie(url):
+    def load_lottie(url: str):
     request = requests.get(url)
     if request.status_code != 200:
         return None
