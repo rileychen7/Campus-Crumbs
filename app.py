@@ -11,14 +11,14 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-background_image = """
+background_image = 
 <style>
     body {
         background-image: url("tikka.png");
         background-size: cover;
     }
 </style>
-"""
+
 st.markdown(background_image, unsafe_allow_html=True)
 
 if page == 'Page 2':
