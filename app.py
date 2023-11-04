@@ -1,5 +1,15 @@
 import streamlit as st
-# Your code for other pages...
+
+st.set_page_config(page_title="StudiFood", page_icon="✅")
+
+st.title("StudiFood")
+
+st.sidebar.header("Navigation")
+page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
+
+if page == 'Page 1':
+    st.header("Welcome to StudiFood!")
+    st.write("Order delicious campus food and have it delivered to your dorm.")
 
 if page == 'Page 2':
     st.header("Menu Selection")
