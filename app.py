@@ -49,7 +49,7 @@ if page == 'Page 1':
 background_image = """
 <style>
     body {
-        background-image: url("panasia.png");
+        background-image: url("fooddelivery.jpeg");
         background-size: cover;
     }
 </style>
