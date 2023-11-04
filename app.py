@@ -7,29 +7,30 @@ st.set_page_config(page_title="StudiFood", page_icon="🍔")
 st.markdown(
     """
     <style>
-    body {
+    .stApp {
         background-color: #3498db; /* Blue background */
-        color: #fff; /* White text color */
-        margin: 0;
-        padding: 0;
     }
-    .sidebar .sidebar-content {
+    .stSidebar .sidebar-content {
         background-color: #2980b9; /* Darker blue for sidebar */
-        color: #fff;
+        color: #fff; /* White text color */
     }
-    .sidebar .sidebar-content a {
-        color: #fff;
+    .stSidebar .sidebar-content a {
+        color: #fff; /* White text color for sidebar links */
     }
-    .main {
+    .stMain {
         background-color: #fff; /* White main content background */
         border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .st-bw {
-        color: #fff; /* White text color for some specific components */
+    .stMarkdown a {
+        color: #3498db; /* Blue links in Markdown */
     }
-    .st-bw select {
-        background-color: #3498db; /* Blue background for select boxes */
-        color: #fff; /* White text color for select boxes */
+    .stButton {
+        background-color: #3498db; /* Blue buttons */
+        color: #fff; /* White text on buttons */
+    }
+    .stButton:hover {
+        background-color: #2980b9; /* Darker blue on button hover */
     }
     </style>
     """,
@@ -54,7 +55,6 @@ background_image = """
 </style>
 """
 st.markdown(background_image, unsafe_allow_html=True)
-
 if page == 'Page 2':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items.")
