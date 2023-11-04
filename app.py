@@ -13,15 +13,17 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    """def load_lottieur(url):
+    def load_lottieur(url):
         r = requests.get(url)
         if r.status_code != 200:
             return None
         return r.json()
 
-    lottie_coding = load_lottieur("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-    st_lottie(lottie_coding, height = 300, key = "coding")
-    """
+    lottie_url = "https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json"
+    lottie_json = lottie.load(lottie_url)
+
+    st_lottie = st.lottie(lottie_json, height=300, key="coding")
+    
 
 if page == 'Page 2':
     st.header("Menu Selection")
