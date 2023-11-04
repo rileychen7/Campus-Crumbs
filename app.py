@@ -22,10 +22,10 @@ if page == 'Page 1':
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
     def load_lottie(url: str):
-    request = requests.get(url)
-    if request.status_code != 200:
-        return None
-    return request.json()
+        request = requests.get(url)
+        if request.status_code != 200:
+            return None
+        return request.json()
     
 lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
 st_lottie(lottie, height=300, key="delivery")
