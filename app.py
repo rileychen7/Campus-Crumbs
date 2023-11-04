@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 
 st.set_page_config(page_title="StudiFood", page_icon="✅")
@@ -9,7 +9,7 @@ st.title("StudiFood")
 
 st.sidebar.header("Navigation")
 page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
-
+'''
 #Animation
 def load_lottie(url):
     request = requests.get(url)
@@ -20,7 +20,7 @@ def load_lottie(url):
 lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
 
 st_lottie(lottie, height=300, key="delivery")
-
+'''
 if page == 'Page 1':
     #with st.container 
     st.header("Welcome to StudiFood!")
