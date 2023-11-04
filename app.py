@@ -6,19 +6,20 @@ page_style = """
 <style>
     body {
         font-family: 'Arial', sans-serif;
-        background-color: #f5f5f5;
+        background-color: #3498db;  /* Blue background */
+        color: #fff;  /* White text color */
         margin: 0;
         padding: 0;
     }
     .sidebar .sidebar-content {
-        background-color: #333;
+        background-color: #2980b9;  /* Darker blue for sidebar */
         color: #fff;
     }
     .sidebar .sidebar-content a {
         color: #fff;
     }
     .main {
-        background-color: #fff;
+        background-color: #fff;  /* White main content background */
         padding: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,6 +27,7 @@ page_style = """
     .footer {
         padding: 10px 0;
         text-align: center;
+        color: #fff;
     }
 </style>
 """
