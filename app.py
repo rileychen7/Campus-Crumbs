@@ -1,6 +1,6 @@
-import requests
+#import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="StudiFood", page_icon="✅")
 
@@ -13,7 +13,7 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    def load_lottieur(url):
+    """def load_lottieur(url):
         r = requests.get(url)
         if r.status_code != 200:
             return None
@@ -21,6 +21,7 @@ if page == 'Page 1':
 
     lottie_coding = load_lottieur("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
     st_lottie(lottie_coding)
+    """
 
 if page == 'Page 2':
     st.header("Menu Selection")
