@@ -20,7 +20,7 @@ if page == 'Page 1':
         return r.json()
 
     lottie_coding = load_lottieur("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-    st_lottie(lottie_coding)
+    st_lottie(lottie_coding, height = 300, key = "coding")
     """
 
 if page == 'Page 2':
