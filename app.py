@@ -22,7 +22,7 @@ lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9
 st_lottie(lottie, height=300, key="delivery")
 
 if page == 'Page 1':
-    with st.container 
+    #with st.container 
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
