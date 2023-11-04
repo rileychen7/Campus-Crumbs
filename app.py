@@ -10,16 +10,6 @@ st.title("StudiFood")
 st.sidebar.header("Navigation")
 page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
 
-#Animation
-def load_lottie(url):
-    request = requests.get(url)
-    if request.status_code != 200:
-        return None
-    return request.json()
-    
-lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
-
-st_lottie(lottie, height=300, key="delivery")
 
 if page == 'Page 1':
     with st.container():
@@ -30,6 +20,15 @@ if page == 'Page 1':
 
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
+
+    def load_lottie(url):
+    request = requests.get(url)
+    if request.status_code != 200:
+        return None
+    return request.json()
+    
+lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
+st_lottie(lottie, height=300, key="delivery")
 
 if page == 'Page 2':
     st.header("Menu Selection")
