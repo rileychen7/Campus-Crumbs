@@ -1,7 +1,9 @@
 import streamlit as st
 
+# Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
+# Define the CSS for the blue and white theme
 page_style = """
 <style>
     body {
@@ -32,7 +34,7 @@ page_style = """
 </style>
 """
 
-
+# Add the CSS to the page
 st.markdown(page_style, unsafe_allow_html=True)
 
 st.title("StudiFood")
