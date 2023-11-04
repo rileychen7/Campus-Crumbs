@@ -122,7 +122,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
 
 
 if page == 'Page 3':
-    st.header("Order History")
+    st.header("Cart")
     st.write("View your previous orders and their status")
 
 st.markdown(
