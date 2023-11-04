@@ -86,6 +86,10 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     col2.subheader("Noodle Pavillion")
     col2.write("Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.")
 
+    col1, col2 = st.columns([1, 3])  
+    col1.image("the_cellar.png", use_column_width=True)
+    col2.subheader("The Cellar")
+    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
 
 if page == 'Page 3':
     st.header("Order History")
