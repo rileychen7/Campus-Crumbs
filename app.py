@@ -16,15 +16,19 @@ if page == 'Page 1':
 
 # Add your background image here
 
+background_image_url = 'fooddelivery.jpeg'
+
+# Define the CSS to set the background image
 page_bg_img = '''
 <style>
 body {
-background-image: url("fooddelivery.jpeg");
-background-size: cover;
+    background-image: url("%s");
+    background-size: cover;
 }
 </style>
-'''
+''' % background_image_url
 
+# Use st.markdown to add the CSS for the background image
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Content of the Streamlit app goes here
