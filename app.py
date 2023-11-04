@@ -194,3 +194,29 @@ if bool(sidebars):
     
     df1 = df[np.logical_and.reduce(L)]
     st.table(df1)  
+
+
+if page == 'Cart':
+    st.header("Cart")
+    st.write("View the items you have added to your cart.")
+
+    # Placeholder for the user's cart (replace with actual cart data)
+    user_cart = [
+        {"item_name": "Burger", "quantity": 2, "price": 5.99},
+        {"item_name": "Pizza", "quantity": 1, "price": 8.49},
+        {"item_name": "Salad", "quantity": 1, "price": 4.99},
+    ]
+
+    # Display the items in the cart
+    if not user_cart:
+        st.write("Your cart is empty.")
+    else:
+        total_price = sum(item["quantity"] * item["price"] for item in user_cart)
+
+        st.write(f"**Total Price:** ${total_price:.2f}")
+
+        for item in user_cart:
+            st.write(
+                f"{item['item_name']} (Quantity: {item['quantity']}) - ${item['price']:.2f}"
+            )
+
