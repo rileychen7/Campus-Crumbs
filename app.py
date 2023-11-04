@@ -15,6 +15,7 @@ if page == 'Page 1':
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
 # Add your background image here
+
 page_bg_img = '''
 <style>
 body {
@@ -25,6 +26,10 @@ background-size: cover;
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Content of the Streamlit app goes here
+st.title('Streamlit App with Background Image')
+
 if page == 'Page 2':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items.")
