@@ -3,39 +3,38 @@ import streamlit as st
 # Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-# Define the CSS for the blue and white theme
-page_style = """
-<style>
+# Set Streamlit theme
+st.markdown(
+    """
+    <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #3498db;  /* Blue background */
-        color: #fff;  /* White text color */
+        background-color: #3498db; /* Blue background */
+        color: #fff; /* White text color */
         margin: 0;
         padding: 0;
     }
     .sidebar .sidebar-content {
-        background-color: #2980b9;  /* Darker blue for sidebar */
+        background-color: #2980b9; /* Darker blue for sidebar */
         color: #fff;
     }
     .sidebar .sidebar-content a {
         color: #fff;
     }
     .main {
-        background-color: #fff;  /* White main content background */
-        padding: 20px;
+        background-color: #fff; /* White main content background */
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .footer {
-        padding: 10px 0;
-        text-align: center;
-        color: #fff;
+    .st-bw {
+        color: #fff; /* White text color for some specific components */
     }
-</style>
-"""
-
-# Add the CSS to the page
-st.markdown(page_style, unsafe_allow_html=True)
+    .st-bw select {
+        background-color: #3498db; /* Blue background for select boxes */
+        color: #fff; /* White text color for select boxes */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 st.title("StudiFood")
 
