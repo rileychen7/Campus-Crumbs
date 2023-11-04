@@ -128,3 +128,21 @@ if page == 'Page 3':
     st.header("Cart")
     st.write("View your previous orders and their status")
 
+    
+    orders = pd.DataFrame({
+        'Order ID': [1, 2, 3],
+        'Items': ['Burger, Fries', 'Pizza, Soda', 'Salad, Water'],
+        'Total Price': ['$10.99', '$12.50', '$7.25'],
+        'Status': ['Delivered', 'In Progress', 'Delivered']
+    })
+
+    st.subheader("Order History")
+    st.dataframe(orders)
+
+    
+    if st.button("Place New Order"):
+        st.write("Add order items to the cart and proceed to checkout.")
+    if st.button("Clear Cart"):
+        st.write("Your cart has been cleared.")
+
+
