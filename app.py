@@ -4,24 +4,24 @@ import pandas as pd
 # Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-# Set Streamlit theme
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: #3498db; /* Blue background */
+        background-color: #ffffff; /* White background */
+        font-family: 'Arial', sans-serif;
     }
     .stSidebar .sidebar-content {
-        background-color: #2980b9; /* Darker blue for sidebar */
-        color: #fff; /* White text color */
+        background-color: #f2f2f2; /* Light gray for sidebar */
+        color: #333; /* Dark gray text color */
     }
     .stSidebar .sidebar-content a {
-        color: #fff; /* White text color for sidebar links */
+        color: #3498db; /* Blue text color for sidebar links */
     }
     .stMain {
-        background-color: #fff; /* White main content background */
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff; /* White main content background */
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
     .stMarkdown a {
         color: #3498db; /* Blue links in Markdown */
@@ -29,6 +29,8 @@ st.markdown(
     .stButton {
         background-color: #3498db; /* Blue buttons */
         color: #fff; /* White text on buttons */
+        border-radius: 5px;
+        transition: background-color 0.3s;
     }
     .stButton:hover {
         background-color: #2980b9; /* Darker blue on button hover */
@@ -47,6 +49,7 @@ if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
+# Add your background image here
 background_image = """
 <style>
     body {
