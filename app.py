@@ -1,6 +1,6 @@
 import requests
 import streamlit as st
-#from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
 
 
 st.set_page_config(page_title="StudiFood", page_icon="✅")
@@ -9,7 +9,7 @@ st.title("StudiFood")
 
 st.sidebar.header("Navigation")
 page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
-'''
+
 #Animation
 def load_lottie(url):
     request = requests.get(url)
@@ -20,9 +20,14 @@ def load_lottie(url):
 lottie = load_lottie("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
 
 st_lottie(lottie, height=300, key="delivery")
-'''
+
 if page == 'Page 1':
-    #with st.container 
+    with st.container():
+        st.write("---")
+        leftc, rightc = st.columns(2)
+        with rightc:
+            st_lottie(lottie, height=300, key="delivery")
+
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
@@ -53,9 +58,33 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
 
     col1, col2 = st.columns([1, 3])  
     col1.image("tims.png", use_column_width=True)
-    col2.subheader("Tim Hortans")
+    col2.subheader("Tim Hortons")
     col2.write("Hot, fresh coffee and delicious baked goods. Serving a variety of muffins, bagels, doughnuts and more!")
     
+    col1, col2 = st.columns([1, 3])  
+    col1.image("kali.png", use_column_width=True)
+    col2.subheader("Kali Orexi ")
+    col2.write("Mediterranean cuisine and fare from Middle Eastern countries. Here you will find marinated choice cuts of meats, ancient grains and regional spices.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("tikka.png", use_column_width=True)
+    col2.subheader("Tikka Table")
+    col2.write("Traditional dishes with flavorful spices from the different regions of India.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("1846.png", use_column_width=True)
+    col2.subheader("1846 Grill")
+    col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("panasia.png", use_column_width=True)
+    col2.subheader("Champa Sushi")
+    col2.write("Flavors from China, Korea and Taiwan abound in a variety of dishes on a rotating basis.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("noodle.png", use_column_width=True)
+    col2.subheader("Noodle Pavillion")
+    col2.write("Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.")
 
 
 if page == 'Page 3':
