@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 # Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
