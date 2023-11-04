@@ -14,16 +14,17 @@ if page == 'Page 1':
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
 # Add your background image here
-background_image = """
-<style>
-    body {
-        background-image: url("fooddelivery.jpeg");
-        background-size: cover;
+def set_background(png_file):
+    bin_str = get_base64(png_file)
+    page_bg_img = '''
+    <style>
+    .stApp {
+    background-image: url("data:image/png;base64,%s");
+    background-size: cover;
     }
-</style>
-"""
-
-st.markdown(background_image, unsafe_allow_html=True)
+    </style>
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 if page == 'Page 2':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items.")
