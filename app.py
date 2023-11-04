@@ -7,6 +7,14 @@ st.title("StudiFood")
 st.sidebar.header("Navigation")
 page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
 
+background_image = 
+    <style>
+        body {
+            background-image: ("tikka.png");
+            background-size: cover;
+        }
+    <style>
+
 if page == 'Page 1':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
