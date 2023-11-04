@@ -68,12 +68,6 @@ if page == 'Page 2':
     col1.image("jamba.png", use_column_width=True)
     col2.subheader("Jamba")
     col2.write("Stop in and enjoy the world's freshest, most fruit-filling experience. Jamba in the Student Union has a wide variety for smoothies, fruit juices and so much more.")
-    
-    for item in menu_items:
-        col1, col2 = st.columns([1, 3])
-        col1.image(item["image"], use_column_width=True)
-        col2.subheader(item["name"])
-        col2.write(item["description"])
 
 if page == 'Page 3':
     st.header("Order History")
