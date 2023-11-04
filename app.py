@@ -131,8 +131,8 @@ if page == 'Page 3':
     
     orders = pd.DataFrame({
         'Order ID': [1, 2, 3],
-        'Items': ['Burger, Fries', 'Pizza, Soda', 'Salad, Water'],
-        'Total Price': ['$10.99', '$12.50', '$7.25'],
+        'Items': ['Pan Asia - Protien', 'Tikka Table - Protein', 'All American Burger'],
+        'Total Price': ['$11.75', '$11.75', '$9.99'],
         'Status': ['Delivered', 'In Progress', 'Delivered']
     })
 
