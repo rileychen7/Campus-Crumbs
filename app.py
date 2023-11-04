@@ -19,7 +19,7 @@ if page == 'Page 1':
             return None
         return r.json()
 
-    lottie_coding = load_lottieur("https://app.lottiefiles.com/animation/f00039ae-d989-4d4c-9ae8-cad4f9e25570")
+    lottie_coding = load_lottieur("Animation - 1699133095123.json")
     st_lottie(lottie_coding)
     """
 
