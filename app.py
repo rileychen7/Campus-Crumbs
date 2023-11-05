@@ -38,7 +38,7 @@ if st.session_state.page == 'Home Page':
             col2.button("The Elli")
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
             st.subheader("The Menu")
-            st.write("item 1. $10\n","item 2. $20")
+            st.write("Item 1: $10\n Item 2: $20")
 
         elif restaurant_ellicott == "Au Bon Pain":
             col1, col2 = st.columns([1, 3])  
