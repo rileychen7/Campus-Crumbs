@@ -56,7 +56,8 @@ if st.session_state.page == 'Home Page':
             }
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-
+                st.button("Add+")
+            
 
         elif restaurant_ellicott == "Au Bon Pain":
             col1, col2 = st.columns([1, 3])  
