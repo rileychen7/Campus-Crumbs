@@ -165,3 +165,24 @@ if page == 'Your Orders':
         st.write("Add order items to the cart and proceed to checkout.")
     if st.button("Clear Cart"):
         st.write("Your cart has been cleared.")
+
+if st.session_state.page == 'Your Orders':
+    st.header("Cart")
+    
+    # Display the cart content
+    if st.session_state.cart:
+        st.subheader("Items in Cart")
+        for item in st.session_state.cart:
+            st.write(item)
+    else:
+        st.write("Your cart is empty.")
+
+    if st.button("Place New Order"):
+        # Add logic to add items to the cart and proceed to checkout
+        st.session_state.cart.append("Your new order item")  # Add your actual logic here
+        st.session_state.page = 'Checkout'  # You can redirect to a checkout page if needed
+
+    if st.button("Clear Cart"):
+        # Clear the cart
+        st.session_state.cart = []
+
