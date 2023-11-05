@@ -185,7 +185,7 @@ if st.session_state.page == 'Home Page':
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-    if delivery_location=="Show All Restaurant":
+    if delivery_location=="Show All Restaurants":
         st.header("Menu Selection")
         st.write("Browse the menu and select your favorite items")
         
