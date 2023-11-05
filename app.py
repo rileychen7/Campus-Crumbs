@@ -888,6 +888,6 @@ if st.session_state.page == 'Your Orders':
 #Names
 st.markdown("---")
 
-st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by [Riley Chen](https://www.linkedin.com/in/riley-chen--/), Johnny Chen, Animesh Saha, Neeraj Arde")
+st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by [Riley Chen](https://www.linkedin.com/in/riley-chen--/), [Johnny Chen](https://www.linkedin.com/in/chenjohnny3), [Animesh Saha](https://www.linkedin.com/in/saha-animesh), [Neeraj Arde](https://www.linkedin.com/in/neerajaksha-arde-4a9747294)")
 
 
