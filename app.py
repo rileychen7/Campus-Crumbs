@@ -78,8 +78,14 @@ if st.session_state.page == 'Order Now':
                 return value * count
             
             for key in menu_items:
-                st.write(key)
-                st.button(key)
+                Y=st.button(key)
+                count=0
+                value=menu_items.get(key,0)
+                if Y:
+                    count+=1
+                    
+                    calculate_value(count,value)
+            
 
 
     
