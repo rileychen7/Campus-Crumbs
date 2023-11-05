@@ -431,7 +431,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Kali Orexi")
             col2.write("Mediterranean cuisine and fare from Middle Eastern countries. Here you will find marinated choice cuts of meats, ancient grains, and regional spices.")
             col2.subheader("Menu")
-            menu_items_kali = {
+            menu_items = {
                 "Hummus Platter": "$8.99",
                 "Shawarma Wrap": "$9.99",
                 "Falafel Bowl": "$7.99",
@@ -440,7 +440,7 @@ if st.session_state.page == 'Home Page':
                 "Greek Salad": "$6.99"
         }
 
-            for item, price in menu_items_kali.items():
+            for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Tikka Table":
@@ -449,7 +449,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Tikka Table")
             col2.write("Traditional dishes with flavorful spices from the different regions of India.")
             col2.subheader("Menu")
-            menu_items_tikka = {
+            menu_items = {
         "Chicken Tikka Masala": "$12.99",
         "Paneer Butter Masala": "$11.99",
         "Lamb Rogan Josh": "$13.99",
@@ -458,7 +458,7 @@ if st.session_state.page == 'Home Page':
         "Garlic Naan": "$2.99"
     }
 
-            for item, price in menu_items_tikka.items():
+            for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "1846 Grill":
@@ -474,7 +474,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Pan Asia")
             col2.write("Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.")
             col2.subheader("Menu")
-            menu_items_panasia = {
+            menu_items = {
         "General Tso's Chicken": "$9.99",
         "Bibimbap": "$10.99",
         "Taiwanese Beef Noodle Soup": "$8.99",
@@ -483,7 +483,7 @@ if st.session_state.page == 'Home Page':
         "Kung Pao Tofu": "$9.49"
     }
 
-            for item, price in menu_items_panasia.items():
+            for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Noodle Pavilion":
