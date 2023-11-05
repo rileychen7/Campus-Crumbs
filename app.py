@@ -63,6 +63,13 @@ if st.session_state.page == 'Order Now':
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
+            if elli_opening_time <= current_time <= elli_closing_time:
+                st.info("Elli is currently open from 12 PM to 9 PM.")
+            else:
+                st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
