@@ -1,16 +1,6 @@
 import pandas as pd
 import streamlit as st
-st.markdown(
-    """
-    <style>
-        body {
-            background-image: url('imagebg.jpeg');
-            background-size: cover;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
