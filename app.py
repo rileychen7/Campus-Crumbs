@@ -185,6 +185,7 @@ if st.session_state.page == 'Order Now':
                 
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -209,6 +210,7 @@ if st.session_state.page == 'Order Now':
             }
             if au_bon_pain_opening_time <= current_time <= au_bon_pain_closing_time:
                 st.info("Au Bon Pain is currently open from 10:30 AM to 8:30 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Au Bon Pain is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -233,6 +235,7 @@ if st.session_state.page == 'Order Now':
             }
             if hubies_opening_time <= current_time <= hubies_closing_time:
                 st.info("Hubies is currently open from 5:00 PM to 10:00 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Hubies is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -258,6 +261,7 @@ if st.session_state.page == 'Order Now':
             }
             if wrapitup_opening_time <= current_time <= wrapitup_closing_time:
                 st.info("Wrap it up is currently open from 7:00 PM to 3:00 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Wrap it up is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -283,6 +287,7 @@ if st.session_state.page == 'Order Now':
             }
             if sizzles_opening_time <= current_time <= sizzles_closing_time:
                 st.info("sizzles is currently open from 10:00 AM to 8:30 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Sizzles is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -308,6 +313,7 @@ if st.session_state.page == 'Order Now':
             }
             if bowl_opening_time <= current_time <= bowl_closing_time:
                 st.info("The Bowl is currently open from 11:00 AM to 4:000 PM.")
+                st.button("Check Out")
             else:
                 st.warning("The Bowl is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -332,6 +338,7 @@ if st.session_state.page == 'Order Now':
             }
             if gnr_opening_time <= current_time <= gnr_closing_time:
                 st.info("Guac and Roll is currently open from 11:00 AM to 8:30 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Guac and Roll is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
@@ -356,6 +363,7 @@ if st.session_state.page == 'Order Now':
             }
             if p_opening_time <= current_time <= p_closing_time:
                 st.info("Perks is currently open from 8:00 AM to 4:00 PM.")
+                st.button("Check Out")
             else:
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item in menu_items.keys():
