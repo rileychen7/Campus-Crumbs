@@ -64,7 +64,8 @@ if st.session_state.page == 'Order Now':
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                    
+                st.write(count)
+                st.write(shopping_cart)
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
@@ -239,7 +240,8 @@ if st.session_state.page == 'Order Now':
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
-    
+st.write(count)
+st.write(shopping_cart)
     
     if delivery_location=="Show All Restaurants":
         st.header("Menu Selection")
