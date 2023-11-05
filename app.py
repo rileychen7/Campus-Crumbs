@@ -45,8 +45,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Menu")
             menu_items = {
                 "Chips": "$2.99",}
-            if st.button("Click me"):
-                st.write("Clicked")
+                st.button("Click me"):
             
 '''                "Soda": "$1.99",
                 "Sandwich": "$4.99",
