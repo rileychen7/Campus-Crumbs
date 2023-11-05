@@ -83,7 +83,8 @@ if st.session_state.page == 'Order Now':
                 value=menu_items.get(key,0)
                 if Y:
                     st.session_state['count'] += 1
-                st.write(st.session_state['count'])
+                    st.session.state['value']=value*count
+                    st.write(st.session_state['value'])
                    
             
 
