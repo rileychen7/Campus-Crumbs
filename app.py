@@ -124,6 +124,18 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Sizzles")
             col2.write("What a grill we've got! Meet us at Sizzles in the Ellicott Food Court for breakfast and try our fresh eggs, sausage, bacon and hash browns. Our lunch and dinner fare features hot, grilled sandwiches, made just how you want them. So for all things grilled, this is the place to go.")
             col2.subheader("Menu")
+            menu_items = {
+                "Bacon, Egg & Cheese Breakfast Sandwich": "$4.99",
+                "Grilled Chicken Panini": "$8.99",
+                "Classic Cheeseburger": "$6.99",
+                "Veggie Wrap": "$7.99",
+                "French Fries": "$2.99",
+                "Milkshake": "$3.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
+
             
         elif restaurant_ellicott == "The Bowl":
             col1, col2 = st.columns([1, 3])  
@@ -131,6 +143,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("The Bowl")
             col2.write("The Bowl in the Ellicott Food Court is the place to go when you're thinking lighter or maybe some comforting soup. Our salad bar offers a tremendous variety; the freshest veggies, an assortment of greens, cheeses, crispy toppings, specialty oils and vinegars, and dressings.")
             col2.subheader("Menu")
+            menu_items = {
+                "Create Your Own Salad": "Price varies by ingredients",
+                "Soup of the Day": "$4.99",
+                "Crispy Chicken Salad": "$8.99",
+                "Greek Salad": "$7.99",
+                "Caesar Salad": "$6.99",
+                "Fruit Salad": "$3.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_ellicott == "Guac and Roll":
             col1, col2 = st.columns([1, 3])  
@@ -138,6 +161,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Guac and Roll")
             col2.write("If authentic Mexican food is what you're craving, stop by Guac and Roll in the Ellicott Food Court. Our menu features traditional Mexican favorites — tacos, burritos, nachos and more — with a wide variety of sides to accompany your main dish. Choose from one of our homemade salsas and guacamole. We've got everything to give you that South of the Border eating experience.")
             col2.subheader("Menu")
+            menu_items = {
+                "Taco (Beef or Chicken)": "$3.99",
+                "Burrito (Vegetarian or Pork)": "$7.99",
+                "Nachos with Cheese": "$4.99",
+                "Chips & Guacamole": "$5.99",
+                "Quesadilla": "$6.99",
+                "Mexican Rice": "$2.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_ellicott == "Perks":
             col1, col2 = st.columns([1, 3])  
@@ -145,6 +179,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Perks")
             col2.write("Perks in the Ellicott Food Court is so much more than your average neighborhood coffee house. Comfortable couches and our cool blues and jazz motif sets the mood for sipping high quality, fresh roasted coffees and teas. Choose from a regular cup of joe or tea, to espresso and specialty iced coffees. Every day we offer a variety of different brew blends from a light roast to a darker roast. A freshly baked muffin, cookie or scone is the perfect compliment to your hot beverage. The Ice Cream Shoppe offers delightfully refreshing treats with sundaes, milkshakes and cones.")
             col2.subheader("Menu")
+            menu_items = {
+                "Latte": "$4.49",
+                "Iced Coffee": "$3.99",
+                "Muffin": "$2.99",
+                "Cappuccino": "$4.99",
+                "Cookie": "$1.99",
+                "Ice Cream Sundae": "$5.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
     elif delivery_location == 'North Campus Academic Buildings':
         st.markdown("You've selected delivery to North Campus Academic Buildings.")
