@@ -685,7 +685,7 @@ if st.session_state.page == 'Be A Driver':
         driver_license = st.file_uploader("Upload Driver's License")
 
     if st.button("Register"):
-        st.write("Thank you for registering as a driver!")
+        st.write("Thank you for registering!")
             
 
 if st.session_state.page == 'Your Orders':
