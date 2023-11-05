@@ -16,6 +16,7 @@ st.markdown(
     <style>
     .reportview-container {
         background: url("fooddelivery.jpeg");
+        background-size:200
     }
    </style>
     """,
