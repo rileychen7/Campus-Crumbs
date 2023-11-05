@@ -44,9 +44,6 @@ st.sidebar.header("Navigation")
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver'])
 
 
-st.sidebar.header("Navigation")
-
-
 shopping_cart = {}
 count = 0
 
