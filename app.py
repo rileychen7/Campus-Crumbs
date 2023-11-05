@@ -53,7 +53,7 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": "$2.49"
             }
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-            add_item = st.button("Add Item"):
+            add_item = st.button("Add Item")
             if menu_elli == "Chips":
                 if add_item:
                     key = "Chips"
