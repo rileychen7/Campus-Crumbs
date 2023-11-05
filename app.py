@@ -394,6 +394,18 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Pistachio's")
             col2.write("""Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli.
     At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
+            col2.subheader("Menu")
+            menu_items = {
+                "Chicken Alfredo Pasta": "$9.99",
+                "Caprese Panini": "$8.99",
+                "Turkey and Swiss Panini": "$7.99",
+                "Spinach and Feta Pasta": "$8.49",
+                "Italian Hoagie": "$7.99",
+                "Gourmet Grilled Cheese": "$6.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
 
         elif restaurant_north == "Tims":
             col1, col2 = st.columns([1, 3])  
