@@ -43,14 +43,14 @@ if st.session_state.page == 'Home Page':
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
             col1.subheader("Menu")
-            menu_items = {
+            col1.write(menu_items = {
                 "Chips": "$2.99",
                 "Soda": "$1.99",
                 "Sandwich": "$4.99",
                 "Salad": "$5.99",
                 "Fruit Cup": "$3.99",
                 "Yogurt": "$2.49"
-            }
+            })
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
             else:
