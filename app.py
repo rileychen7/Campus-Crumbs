@@ -700,10 +700,10 @@ if st.session_state.page == 'Your Orders':
     'Total Price': ['$11.75', '$11.75', '$9.99'],
     'Status': ['Delivered', 'In Progress', 'Delivered']
 })
-"""
+
 st.subheader("Order History")
 st.dataframe(orders)
-
+"""
 
 #Names
 st.markdown("---")
