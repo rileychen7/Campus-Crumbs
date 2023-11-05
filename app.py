@@ -2,14 +2,25 @@ import pandas as pd
 import streamlit as st
 
 
-
+if 'cart' not in st.session_state:
+    st.session_state.cart = []
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
 st.title("StudiFood")
 
+# Create a button to redirect to the Your Orders page
+if st.button("Cart"):
+    st.session_state.page = 'Your Orders'
+
+# Check if the page is selected and set a default page
+if 'page' not in st.session_state:
+    st.session_state.page = 'Home Page'
+
 st.sidebar.header("Navigation")
-page = st.sidebar.selectbox("Select a page", ['Home Page', 'Restaurants', 'Your Orders'])
+
+# Modify the selectbox to reflect the session state
+st.session_state.page = st.sidebar.selectbox("Select a page", ['Home Page', 'Restaurants', 'Your Orders'])
 
 if page == 'Home Page':
     st.header("Welcome to StudiFood!")
