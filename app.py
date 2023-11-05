@@ -92,8 +92,9 @@ if st.session_state.page == 'Home Page':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
                 
-                
         elif restaurant_ellicott == "Hubies":
+            hubies_opening_time = current_time.replace(hour=5, minute=00, second=0)
+            hubies_closing_time = current_time.replace(hour=22, minute=00, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("hubies.png", use_column_width=True)
             col2.subheader("Hubies")
@@ -107,12 +108,17 @@ if st.session_state.page == 'Home Page':
                 "Philly Cheesesteak Sub": "$8.99",
                 "Vegetarian Sub": "$7.99"
             }
-
+            if hubies_opening_time <= current_time <= hubies_closing_time:
+                st.info("Hubies is currently open from 5:00 PM to 10:00 PM.")
+            else:
+                st.warning("Hubies is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
             
         elif restaurant_ellicott == "Wrap it Up":
+            wrapitup_opening_time = current_time.replace(hour=7, minute=00, second=0)
+            wrapitup_closing_time = current_time.replace(hour=15, minute=00, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("wrapitup.png", use_column_width=True)
             col2.subheader("Wrap it up")
@@ -126,12 +132,17 @@ if st.session_state.page == 'Home Page':
                 "Bagel with Cream Cheese": "$2.99",
                 "Turkey Club Wrap": "$9.99"
             }
-
+            if wrapitup_opening_time <= current_time <= wrapitup_closing_time:
+                st.info("Wrap it up is currently open from 7:00 PM to 3:00 PM.")
+            else:
+                st.warning("Wrap it up is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
             
         elif restaurant_ellicott == "Sizzles":
+            sizzles_opening_time = current_time.replace(hour=10, minute=00, second=0)
+            sizzles_closing_time = current_time.replace(hour=20, minute=30, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("sizzles.png", use_column_width=True)
             col2.subheader("Sizzles")
@@ -145,11 +156,13 @@ if st.session_state.page == 'Home Page':
                 "French Fries": "$2.99",
                 "Milkshake": "$3.99"
             }
-
+            if sizzles_opening_time <= current_time <= sizzles_closing_time:
+                st.info("sizzles it up is currently open from 10:00 AM to 8:30 PM.")
+            else:
+                st.warning("Sizzles it up is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
-            
         elif restaurant_ellicott == "The Bowl":
             col1, col2 = st.columns([1, 3])  
             col1.image("thebowl.png", use_column_width=True)
