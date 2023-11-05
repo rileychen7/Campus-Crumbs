@@ -76,7 +76,7 @@ if st.session_state.page == 'Order Now':
             
             def calculate_value(count, value):
                 return value * count
-            st.session_state['count']=1
+            st.session_state['count']=0
             for key in menu_items:
                 Y=st.button(key)
                 if Y:
