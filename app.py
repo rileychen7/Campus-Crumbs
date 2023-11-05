@@ -72,24 +72,30 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": 2.49
             }
             menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
+      
             
-                      
+            def calculate_value(count, value):
+                return value * count
             
             def main():
-              
+                st.title('Button Counter with Dictionary')
             
-                if 'Chips' not in st.session_state:
-                    st.session_state['Chips'] = {'value': 0}
+                if 'menu_items' not in st.session_state:
+                    st.session_state['menu_items'] = {'value': 1}
+            
+                count = st.session_state['count']
+                value = st.session_state['menu_items']['value']
             
                 if st.button('Click me'):
-                    count = st.session_state['Chips']['value']
-                    count += 1
-                    st.session_state['Chips']['value'] = value * (count + 1)  # Update value in dictionary
+                    count = count + 1 if 'count' in st.session_state else 1
+                    st.session_state['count'] = count
             
-            st.write(f"Value: {st.session_state['Chips']['value']}")
+                    final_value = calculate_value(count, value)
+                    st.session_state['menu_itmes']['value'] = final_value
             
+            st.write(f"Value: {st.session_state['menu_items']['value']}")
 
-          
+
     
             if menu_elli == "Chips":
                 if st.button("ADD"):
