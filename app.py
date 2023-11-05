@@ -65,7 +65,19 @@ if st.session_state.page == 'Home Page':
             col1.image("aubonpain.png", use_column_width=True)
             col2.subheader("au bon pain The Bakery Cafe")
             col2.write("At Au Bon Pain in Greiner Hall, we take our service - and menu - From our scrumptious pastries and premium coffee line to inspired menus filled with savory sandwiches, soups and salads, our lively, bustling marketplace allows you to personally select the freshest choices.")
+            col2.subheader("Menu")
+            menu_items = {
+                "Croissant": "$2.99",
+                "Cappuccino": "$3.49",
+                "Turkey & Swiss Sandwich": "$7.99",
+                "Chicken Caesar Salad": "$6.99",
+                "Muffin": "$2.49",
+                "Fruit Salad": "$4.99"
+            }
 
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
+                
         elif restaurant_ellicott == "Hubies":
             col1, col2 = st.columns([1, 3])  
             col1.image("hubies.png", use_column_width=True)
