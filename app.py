@@ -23,7 +23,7 @@ if 'page' not in st.session_state:
 
 st.sidebar.header("Navigation")
 
-st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Restaurants', 'Your Orders', 'Be A Driver])
+st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Restaurants', 'Your Orders', 'Be A Driver'])
 
 shopping_cart = {}
 
