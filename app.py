@@ -825,4 +825,6 @@ if st.session_state.page == 'Your Orders':
         st.write("You haven't placed any orders yet.")
 #Names
 st.markdown("---")
-st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
+
+st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by [Riley Chen](inkedin.com/in/riley-chen--/), Johnny Chen, Animesh Saha, Neeraj Arde")
+
