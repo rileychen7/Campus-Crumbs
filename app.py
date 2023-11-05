@@ -6,7 +6,7 @@ import pytz
 est = pytz.timezone("US/Eastern")
 current_time = datetime.now(est)
 
-st.set_page_config(page_title="Campus Crumbs", page_icon="🍔")
+st.set_page_config(page_title="Campus Crumbs", page_icon="logo.png")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
 
