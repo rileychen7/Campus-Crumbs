@@ -492,7 +492,7 @@ if st.session_state.page == 'Order Now':
                 "Vegetarian Tempura Roll": "$10.99"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
 
@@ -511,7 +511,7 @@ if st.session_state.page == 'Order Now':
                 "Protein Power Smoothie": "$6.49"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -530,7 +530,7 @@ if st.session_state.page == 'Order Now':
                 "Taco Salad": "$7.99"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -550,7 +550,7 @@ if st.session_state.page == 'Order Now':
                 "Gourmet Grilled Cheese": "$6.99"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
 
@@ -569,7 +569,7 @@ if st.session_state.page == 'Order Now':
                 "Breakfast Wrap": "$5.99"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -588,7 +588,7 @@ if st.session_state.page == 'Order Now':
                 "Greek Salad": "$6.99"
             }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -607,7 +607,7 @@ if st.session_state.page == 'Order Now':
                 "Garlic Naan": "$2.99"
     }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -645,7 +645,7 @@ if st.session_state.page == 'Order Now':
                 "Kung Pao Tofu": "$9.49"
     }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
@@ -664,7 +664,7 @@ if st.session_state.page == 'Order Now':
         "Vegetable Lo Mein": "$8.99"
     }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
                 
