@@ -483,7 +483,7 @@ if st.session_state.page == 'Home Page':
     }
 
             for item, price in menu_items.items():
-                st.write(f"- {item}: {price}")
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Pan Asia":
             col1, col2 = st.columns([1, 3])  
@@ -519,7 +519,7 @@ if st.session_state.page == 'Home Page':
     }
 
             for item, price in menu_items.items():
-                st.write(f"- {item}: {price}")
+                col2.write(f"- {item}: {price}")
 
     if delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
