@@ -31,7 +31,7 @@ nav_bar_css = """
 }
 
 .sidebar .css-17h2l1e a:hover {
-    background-color: #f0f0f0; /* Hover background color */
+    background-color: #f0f0f0; 
 }
 </style>
 """
