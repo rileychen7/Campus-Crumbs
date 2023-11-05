@@ -618,17 +618,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Teddy's")
             col2.write("Teddy's is our convenience store in Governors!")
             col2.subheader("Menu")
-            menu_items_teddys = {
-                "Bottled Water": "$1.99",
-                "Chips": "$1.49",
-                "Candy Bars": "$1.99",
-                "Soda (Can)": "$1.99",
-                "Instant Noodles": "$2.99",
-                "Microwave Popcorn": "$2.49"
-    }
-
-            for item, price in menu_items_teddys.items():
-                col2.write(f"- {item}: {price}")
+            
             
         elif restaurant_governers == "The Cellar":
             col1, col2 = st.columns([1, 3])  
