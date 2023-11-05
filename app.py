@@ -3,17 +3,14 @@ import streamlit as st
 
 
 background_image_path = 'food.jpeg'
-st.markdown(
-    f"""
+css = f"""
     <style>
         body {{
             background-image: url('food.jpeg');
             background-size: cover;
         }}
     </style>
-    """,
-    unsafe_allow_html=True
-)
+"""
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 if 'cart' not in st.session_state:
