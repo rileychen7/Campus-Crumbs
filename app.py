@@ -25,9 +25,6 @@ count = 0
 if st.session_state.page == 'Order Now':
     if st.button("Cart"):
         st.session_state.page = 'Your Orders'
-
-    if st.button("Register to Deliver!"):
-        st.session_state.page = 'Register To Deliver'
         
     st.header("Welcome to Campus Crumbs!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
