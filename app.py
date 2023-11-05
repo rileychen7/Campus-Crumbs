@@ -73,34 +73,23 @@ if st.session_state.page == 'Order Now':
             }
             menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
             
-            def main(menu):
-                menu_items= {
-                "Chips": 2.99,
-                "Soda": 1.99,
-                "Sandwich": 4.99,
-                "Salad": 5.99,
-                "Fruit Cup": 3.99,
-                "Yogurt": 2.49
-            }
-                count = st.session_state.get('count', 0)
-                value = st.session_state.get('value', 0)
-                if menu in menu_items.keys():
-                    menu_items[menu]=menu_itmes.get(menu,0)
-                    value=menu_items[menu]
-                    
-                    
-                    
+                      
+            
+            def main():
+              
+            
+                if 'menu_itmes' not in st.session_state:
+                    st.session_state['menu_items'] = {'value': 0}
+            
                 if st.button('Click me'):
+                    count = st.session_state['menu_items']['value']
                     count += 1
-                    value=count*value
-                    st.session_state['count'] = count
-                    st.session_state.get['value']=value
-                    
-                
-                st.write(f'Count: {value}')
+                    st.session_state['menu_items']['value'] = value * (count + 1)  # Update value in dictionary
             
+                st.write(f"Value: {st.session_state['counter_dict']['value']}")
             
-            st.write(main("Chips"))
+            st.write(main())
+
           
     
             if menu_elli == "Chips":
