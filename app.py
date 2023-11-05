@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 
 
-st.set_page_config(page_title="StudiFood", page_icon="🍔")
 background_image_path = "food.jpeg"
 
 css = f"""
@@ -14,6 +13,7 @@ css = f"""
     </style>
 """
 
+st.set_page_config(page_title="StudiFood", page_icon="🍔")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
 
