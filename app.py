@@ -23,7 +23,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-logo = Image.open('logo.png')
+logo = Image.open('logo1.png')
 st.image(logo, use_column_width=True)
 
 if st.button("Cart"):
