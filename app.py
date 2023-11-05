@@ -59,7 +59,6 @@ if st.session_state.page == 'Order Now':
                     key = "Chips"
                     value = 2.99
                     if key not in shopping_cart:
-                        shopping_cart[key] = []
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
             st.write(shopping_cart)
