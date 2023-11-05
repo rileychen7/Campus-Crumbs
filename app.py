@@ -69,7 +69,7 @@ if page == 'Restaurants':
         ],
         'South Campus': [
             ("Main Street Store", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.", "main_street_store.png"),
-            ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store
+            ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus.")
 
 if page == 'Your Orders':
     st.header("Cart")
