@@ -24,7 +24,7 @@ if 'page' not in st.session_state:
 st.sidebar.header("Navigation")
 
 
-st.session_state.page = st.sidebar.selectbox("Select a page", ['Home Page', 'Restaurants', 'Your Orders'])
+st.session_state.page = st.sidebar.selectbox("Navigation", ['Home Page', 'Restaurants', 'Your Orders'])
 
 if st.session_state.page == 'Home Page':
     st.header("Welcome to StudiFood!")
