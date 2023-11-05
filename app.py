@@ -23,7 +23,7 @@ if 'page' not in st.session_state:
 
 st.sidebar.header("Navigation")
 
-st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Be A Driver'])
+st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver '])
 
 shopping_cart = {}
 count = 0
@@ -662,7 +662,7 @@ if st.session_state.page == 'Order Now':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
-if st.session_state.page == 'Be A Driver':
+if st.session_state.page == 'Register To Deliver ':
     st.header("Driver Registration")
     st.write("Sign up to become a Campus Crumbs delivery driver. You can also deliver via motorcycle, bike, e-bike, or scooter!")
 
