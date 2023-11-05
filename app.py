@@ -32,6 +32,10 @@ if page == 'Home Page':
     delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus'])
     if delivery_location == 'Ellicott | Greiner Hall':
         st.markdown("You've selected delivery to Ellicott.")
+        col1, col2 = st.columns([1, 3])  
+        col1.image("TheElli.png", use_column_width=True)
+        col2.subheader("The Elli")
+        col2.write("The Elli is our convenience store in the Ellicott Food Court!")
     elif delivery_location == 'North Campus Academic Buildings':
         st.markdown("You've selected delivery to North Campus Academic Buildings.")
     elif delivery_location == 'South Campus':
