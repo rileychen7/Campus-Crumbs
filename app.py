@@ -670,7 +670,7 @@ if st.session_state.page == 'Order Now':
 
 if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
-    st.write("Sign up to become a Campus Crumbs delivery driver or biker...or walker?.")
+    st.write("Sign up to become a Campus Crumbs delivery driver or biker...or walker?")
             
 
 if st.session_state.page == 'Your Orders':
