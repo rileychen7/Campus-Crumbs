@@ -758,7 +758,7 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": "$2.49"
     }
 
-           for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
                 
