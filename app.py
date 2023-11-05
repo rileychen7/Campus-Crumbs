@@ -72,7 +72,10 @@ if page == 'Restaurants':
     ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus.")  # Missing closing parenthesis
 ]
 
+if page == 'Your Orders':
+    st.header("Cart")
     st.write("View your previous orders and their status")
+    
 
     
     orders = pd.DataFrame({
