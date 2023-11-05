@@ -234,6 +234,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Moe's")
             col2.write("Moe’s Southwest Grill in the Student Union is a fun and engaging fast-casual concept serving a wide variety of fresh, made-to-order southwest fare")
             col2.subheader("Menu")
+            menu_items = {
+                "Homewrecker Burrito": "$7.99",
+                "Joey Bag of Donuts Tacos": "$8.99",
+                "Nachos with Queso": "$6.99",
+                "Burrito Bowl": "$8.49",
+                "Quinoa Power Bowl": "$9.99",
+                "Taco Salad": "$7.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Pistachios":
             col1, col2 = st.columns([1, 3])  
