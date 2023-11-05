@@ -144,7 +144,6 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
 
 if page == 'Your Orders':
     st.header("Cart")
-    st.write
 
     
     orders = pd.DataFrame({
