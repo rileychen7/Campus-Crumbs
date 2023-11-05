@@ -3,12 +3,12 @@ import streamlit as st
 
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
-background_image_path = "imagebg.jpeg"
+background_image_path = "food.jpeg"
 
 css = f"""
     <style>
         body {{
-            background-image: url('imagebg.jpeg');
+            background-image: url('food.jpeg');
             background-size: cover;
         }}
     </style>
