@@ -440,8 +440,8 @@ if st.session_state.page == 'Home Page':
                 "Greek Salad": "$6.99"
         }
 
-    for item, price in menu_items_kali.items():
-        col2.write(f"- {item}: {price}")
+            for item, price in menu_items_kali.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Tikka Table":
             col1, col2 = st.columns([1, 3])  
