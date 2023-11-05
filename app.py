@@ -456,7 +456,7 @@ if st.session_state.page == 'Home Page':
                 "Vegetable Biryani": "$10.99",
                 "Chana Masala": "$9.99",
                 "Garlic Naan": "$2.99"
-            }
+    }
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
