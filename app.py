@@ -1,6 +1,6 @@
 import pandas as pd
 from PIL import Image
-import streamlet as st
+import streamlit as st
 from datetime import datetime
 import pytz
 
