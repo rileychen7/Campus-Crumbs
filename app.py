@@ -47,9 +47,9 @@ if st.session_state.page == 'Home Page':
         restaurant_ellicott = st.selectbox("Select a restaurant in Ellicott", ['The Elli', 'Au Bon Pain', 'Hubies', 'Wrap it Up', 'Sizzles', 'The Bowl', 'Guac and Roll', 'Perks'])
         st.header("Ellicott | Greiner Hall")
 
-        elli_opening_time = current_time.replace(hour=12, minute=0, second=0)
-        elli_closing_time = current_time.replace(hour=21, minute=0, second=0)
         if restaurant_ellicott == "The Elli":
+            elli_opening_time = current_time.replace(hour=12, minute=0, second=0)
+            elli_closing_time = current_time.replace(hour=21, minute=0, second=0)
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
@@ -68,8 +68,10 @@ if st.session_state.page == 'Home Page':
                 st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-        
+
         elif restaurant_ellicott == "Au Bon Pain":
+            au_bon_pain_opening_time = current_time.replace(hour=10, minute=30, second=0)
+            au_bon_pain_closing_time = current_time.replace(hour=20, minute=30, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("aubonpain.png", use_column_width=True)
             col2.subheader("au bon pain The Bakery Cafe")
@@ -83,9 +85,13 @@ if st.session_state.page == 'Home Page':
                 "Muffin": "$2.49",
                 "Fruit Salad": "$4.99"
             }
-
+            if au_bon_pain_opening_time <= current_time <= au_bon_pain_closing_time:
+                st.info("Au Bon Pain is currently open from 10:30 AM to 8:30 PM.")
+            else:
+                st.warning("Au Bon Pain is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
+                
                 
         elif restaurant_ellicott == "Hubies":
             col1, col2 = st.columns([1, 3])  
