@@ -458,8 +458,8 @@ if st.session_state.page == 'Home Page':
         "Garlic Naan": "$2.99"
     }
 
-    for item, price in menu_items_tikka.items():
-        col2.write(f"- {item}: {price}")
+            for item, price in menu_items_tikka.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "1846 Grill":
             col1, col2 = st.columns([1, 3])  
