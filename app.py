@@ -78,7 +78,7 @@ if st.session_state.page == 'Order Now':
                 return value * count
             
             for key in menu_items:
-                st.write(menu_items["Chips"])
+                st.button(menu_items[key])
 
 
     
