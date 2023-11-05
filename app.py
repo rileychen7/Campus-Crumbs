@@ -255,7 +255,7 @@ if st.session_state.page == 'Home Page':
         
         col1, col2 = st.columns([1, 3])  
         col1.image("aubonpain.png", use_column_width=True)
-        col2.subheader("au bon pain The Bakery Cafe")
+        col2.subheader("Au Bon Pain The Bakery Cafe")
         col2.write("At Au Bon Pain in Greiner Hall, we take our service - and menu - From our scrumptious pastries and premium coffee line to inspired menus filled with savory sandwiches, soups and salads, our lively, bustling marketplace allows you to personally select the freshest choices.")
         
         col1, col2 = st.columns([1, 3])  
