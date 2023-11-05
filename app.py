@@ -85,7 +85,7 @@ if st.session_state.page == 'Order Now':
                 st.write(f'Count: {count}')
             
             
-                st.write(main())
+            st.write(main())
     
             if menu_elli == "Chips":
                 if st.button("ADD"):
