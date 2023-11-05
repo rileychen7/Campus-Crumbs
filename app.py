@@ -30,7 +30,8 @@ if page == 'Home Page':
 if page == 'Restaurants':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items")
-    
+
+    st.header("North Campus Academic Buildings")
     col1, col2 = st.columns([1, 3])  
     col1.image("champa.png", use_column_width=True)
     col2.subheader("Champa Sushi")
