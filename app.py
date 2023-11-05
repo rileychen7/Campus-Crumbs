@@ -85,7 +85,8 @@ if st.session_state.page == 'Order Now':
                 count = st.session_state.get('count', 0)
                 value = st.session_state.get('value', 0)
                 if menu in menu_items.keys():
-                    value=menu_itmes.get(menu,0)
+                    menu_items[menu]=menu_itmes.get(menu,0)
+                    value=menu_items[menu]
                     
                     
                     
