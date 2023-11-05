@@ -54,9 +54,9 @@ if st.session_state.page == 'Home Page':
                 "Fruit Cup": "$3.99",
                 "Yogurt": "$2.49"
             }
-
+            plus=st.button("+")
             for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+                col2.write(f"- {item}: {price} {plus}")
 
 
         elif restaurant_ellicott == "Au Bon Pain":
