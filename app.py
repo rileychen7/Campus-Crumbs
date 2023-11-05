@@ -1,23 +1,13 @@
 import pandas as pd
 import streamlit as st
 
-# Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-# Add your background image here
-background_image_url = 'fooddelivery.jpeg'
+background_image = "food.png"  
+background = Image.open(background_image)
+st.image(background, use_column_width=True)
 
-# Define the CSS to set the background image
-page_bg_img = f'''
-<style>
-body {{
-    background-image: url("{background_image_url}");
-    background-size: cover;
-}}
-</style>
-'''
 
-# Use st.markdown to add the CSS for the background image
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("StudiFood")
