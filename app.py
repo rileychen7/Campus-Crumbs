@@ -63,7 +63,7 @@ if st.session_state.page == 'Order Now':
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
             col2.subheader("Menu")
-            menu_items = {
+            menu_items.button = {
                 "Chips": 2.99,
                 "Soda": 1.99,
                 "Sandwich": 4.99,
