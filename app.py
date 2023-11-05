@@ -272,7 +272,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Harriman Café")
             col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas, and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
 
-        elif restaurant_south == "Whispers Cafe at Abbot":
+        elif restaurant_south == "Whispers Cafe at Abbott":
             col1, col2 = st.columns([1, 3])  
             col1.image("whispers_caf_at_abbott.png", use_column_width=True)
             col2.subheader("Whispers Café at Abbott")
