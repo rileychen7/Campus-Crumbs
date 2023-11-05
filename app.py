@@ -240,8 +240,7 @@ if st.session_state.page == 'Order Now':
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
-st.write(count)
-st.write(shopping_cart)
+
     
     if delivery_location=="Show All Restaurants":
         st.header("Menu Selection")
