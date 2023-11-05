@@ -232,26 +232,6 @@ if st.session_state.page == 'Home Page':
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-                
-                
-    if delivery_location == "The Commons":
-        st.markdown("You've selected delivery to The Commons.")
-        restaurant_commons = st.selectbox("Select a restaurant in The Commons", ['Young Chow', 'Poke Factory', 'La Rosa', 'AK Korean', 'Chick-Mex Grill', 'Bollywood Bistro', 'Dancing Chopsticks'])
-        st.header("The Commons")
-    
-       
-    if restaurant_commons == 'Young Chow':
-        col1, col2 = st.columns([1, 3])
-        col1.image("youngchow.png", use_column_width=True)
-        col2.subheader("Young Chow")
-        col2.write("Savor the delicious flavors of Chinese cuisine at our restaurant, where our skilled chefs create traditional dishes with a modern twist using the freshest ingredients. Our welcoming ambiance and attentive staff ensure a memorable dining experience for all.")
-    
-    elif restaurant_commons == 'Poke Factory':
-        col1, col2 = st.columns([1, 3])
-        col1.image("poke.png", use_column_width=True)
-        col2.subheader("Poke Factory")
-        col2.write("Experience the vibrant and healthy flavors of Hawaii at our poke bowl restaurant. Create your own customized bowl with fresh, high-quality ingredients, or choose from our chef's delectable signature creations, all served in a relaxed and inviting atmosphere.")
-
     
     
     if delivery_location=="Show All Restaurants":
