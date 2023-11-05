@@ -54,7 +54,7 @@ if st.session_state.page == 'Order Now':
             }
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
             if menu_elli == "Chips":
-                if add_elli == st.button("Add Item"):
+                if st.button("Add Item"):
                     key = "Chips"
                     value = 1
                     if key not in shopping_cart:
