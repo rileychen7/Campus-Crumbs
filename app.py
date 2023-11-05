@@ -668,7 +668,7 @@ if st.session_state.page == 'Order Now':
 
 if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
-    st.write("Sign up to become a Campus Crumbs delivery driver. You can also dash via motorcycle, bike, e-bike, or scooter!")
+    st.write("Sign up to become a Campus Crumbs delivery driver. You can also deliver via motorcycle, bike, e-bike, or scooter!")
 
     
     driver_name = st.text_input("Full Name")
