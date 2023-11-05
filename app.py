@@ -157,9 +157,9 @@ if st.session_state.page == 'Home Page':
                 "Milkshake": "$3.99"
             }
             if sizzles_opening_time <= current_time <= sizzles_closing_time:
-                st.info("sizzles it up is currently open from 10:00 AM to 8:30 PM.")
+                st.info("sizzles is currently open from 10:00 AM to 8:30 PM.")
             else:
-                st.warning("Sizzles it up is currently closed. You cannot proceed with your order at this time.")
+                st.warning("Sizzles is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
@@ -183,7 +183,7 @@ if st.session_state.page == 'Home Page':
             if bowl_opening_time <= current_time <= bowl_closing_time:
                 st.info("The Bowl is currently open from 11:00 AM to 4:000 PM.")
             else:
-                st.warning("The Bowl it up is currently closed. You cannot proceed with your order at this time.")
+                st.warning("The Bowl is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
@@ -204,9 +204,9 @@ if st.session_state.page == 'Home Page':
                 "Mexican Rice": "$2.99"
             }
             if gnr_opening_time <= current_time <= gnr_closing_time:
-                st.info("Guac and Roll it up is currently open from 11:00 AM to 8:30 PM.")
+                st.info("Guac and Roll is currently open from 11:00 AM to 8:30 PM.")
             else:
-                st.warning("Guac and Roll it up is currently closed. You cannot proceed with your order at this time.")
+                st.warning("Guac and Roll is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
