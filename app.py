@@ -794,18 +794,21 @@ if st.session_state.page == 'Your Orders':
     {"order_id": 2, "date": "2023-10-15", "items": ["Burger", "Fries", "Milkshake"], "total": 15.0},
     
 ]
-if past_orders:
-    st.write("Here are your past orders:")
 
-    for order in past_orders:
-        st.write(f"Order ID: {order['order_id']}")
-        st.write(f"Date: {order['date']}")
-        st.write(f"Items: {', '.join(order['items'])}")
-        st.write(f"Total: ${order['total']:.2f}")
-        st.write("-----")
-else:
-    st.write("You haven't placed any orders yet.")
-    
+if st.session_state.page == 'Your Orders':
+    st.header("Your Orders")
+
+    if past_orders:
+        st.write("Here are your past orders:")
+
+        for order in past_orders:
+            st.write(f"Order ID: {order['order_id']}")
+            st.write(f"Date: {order['date']}")
+            st.write(f"Items: {', '.join(order['items'])}")
+            st.write(f"Total: ${order['total']:.2f}")
+            st.write("-----") 
+    else:
+        st.write("You haven't placed any orders yet.")
 #Names
 st.markdown("---")
 st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
