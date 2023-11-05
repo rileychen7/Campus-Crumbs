@@ -73,22 +73,7 @@ if st.session_state.page == 'Order Now':
             }
             menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
       
-            
-            def calculate_value(count, value):
-                return value * count
-            st.session_state['count']=0
-            for key in menu_items:
-                Y=st.button(key)
-                if Y:
-                    value=menu_items.get(key,0)
-                    st.session_state['count']+=1
-                    st.session_state['count'] *= value
-                    st.write(st.session_state['count'])
-                
-                   
-            
-
-
+          
     
             if menu_elli == "Chips":
                 if st.button("ADD"):
