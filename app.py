@@ -15,9 +15,12 @@ if page == 'Home Page':
     delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus'])
     if delivery_location == 'Ellicott | Greiner Hall':
         st.markdown("You've selected delivery from Ellicott | Greiner Hall.")
+        restaurant_ellicott = st.selectbox("Select a restaurant in Ellicott", ['The Elli', 'Au Bon Pain', 'Hubies'])
+
+
+        st.header("Ellicott | Greiner Hall")
         col1, col2 = st.columns([1, 3]) 
-        col1.markdown("[![The Elli](TheElli.png)](https://example.com)") 
-        #col1.image("TheElli.png", use_column_width=True)
+        col1.image("TheElli.png", use_column_width=True)
         col2.subheader("The Elli")
         col2.write("The Elli is our convenience store in the Ellicott Food Court!")
         st.subheader("The Elli Menu")
