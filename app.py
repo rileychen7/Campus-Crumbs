@@ -709,7 +709,7 @@ if st.session_state.page == 'Order Now':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
-if st.session_state.page == 'Register To Deliver ':
+if st.session_state.page == 'Register To Deliver':
     st.header("Registration Form")
     st.write("Sign up to become a Campus Crumbs delivery driver. You can also deliver via motorcycle, bike, e-bike, or scooter!")
 
