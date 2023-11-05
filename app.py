@@ -561,6 +561,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Main Street Store")
             col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.")
             col2.subheader("Menu")
+            menu_items = {
+                "Coca-Cola (Can)": "$1.99",
+                "Pepsi (Can)": "$1.99",
+                "Bottled Water": "$1.49",
+                "Orange Juice": "$2.49",
+                "Potato Chips": "$1.49",
+                "Granola Bar": "$1.29",
+    }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_south == "Harriman Cafe":
             col1, col2 = st.columns([1, 3])  
@@ -568,12 +579,33 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Harriman Café")
             col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas, and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
             col2.subheader("Menu")
+            menu_items = {
+                "Turkey and Swiss Sandwich": "$6.99",
+                "Pepperoni Pizza Slice": "$3.99",
+                "Fresh Fruit Cup": "$2.49",
+                "Chicken Caesar Salad": "$7.49",
+                "Veggie Wrap": "$5.99",
+                "Chips": "$1.29",
+    }
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
+                
         elif restaurant_south == "Whispers Cafe at Abbott":
             col1, col2 = st.columns([1, 3])  
             col1.image("whispers_caf_at_abbott.png", use_column_width=True)
             col2.subheader("Whispers Café at Abbott")
             col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
             col2.subheader("Menu")
+            menu_items = {
+                "Cappuccino": "$3.99",
+                "Mocha Latte": "$4.49",
+                "Ham and Swiss Croissant": "$4.99",
+                "Caesar Salad": "$5.49",
+                "Blueberry Muffin": "$2.99",
+                "Fresh Fruit Parfait": "$3.49",
+    }
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
 
     if delivery_location == 'Governors':
         st.markdown("You've selected delivery to Governers.")
