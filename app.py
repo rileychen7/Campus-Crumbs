@@ -798,7 +798,6 @@ if st.session_state.page == 'Your Orders':
 ]
 
 if st.session_state.page == 'Your Orders':
-    st.header("Your Orders")
 
     if past_orders:
         st.write("Here are your past orders:")
