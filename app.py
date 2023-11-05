@@ -58,8 +58,8 @@ if st.session_state.page == 'Order Now':
         st.header("Ellicott | Greiner Hall")
 
         if restaurant_ellicott == "The Elli":
-            elli_opening_time = current_time.replace(hour=12, minute=0, second=0)
-            elli_closing_time = current_time.replace(hour=21, minute=0, second=0)
+            elli_opening_time = current_time.replace(hour=0, minute=0, second=0)
+            elli_closing_time = current_time.replace(hour=24, minute=0, second=0)
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
