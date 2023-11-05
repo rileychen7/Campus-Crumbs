@@ -101,7 +101,7 @@ if st.session_state.page == 'Order Now':
                     key = "Soda"
                     value = 1.99
                     count -= 1
-                    if key in shopping_carts:
+                    if key in shopping_carts and shopping_carts[key] > 0:
                         shopping_cart[key] -= value
 
             if menu_elli == "Sandwich":
@@ -116,7 +116,7 @@ if st.session_state.page == 'Order Now':
                     key = "Sandwich"
                     value = 4.99
                     count -= 1
-                    if key in shopping_carts:
+                    if key in shopping_carts and shopping_carts[key] > 0:
                         shopping_cart[key] -= value
 
             if menu_elli == "Salad":
@@ -131,7 +131,7 @@ if st.session_state.page == 'Order Now':
                     key = "Salad"
                     value = 5.99
                     count -= 1
-                    if key in shopping_carts:
+                    if key in shopping_carts and shopping_carts[key] > 0:
                         shopping_cart[key] -= value
 
             if menu_elli == "Fruit Cup":
@@ -146,7 +146,7 @@ if st.session_state.page == 'Order Now':
                     key = "Fruit Cup"
                     value = 3.99
                     count -= 1
-                    if key in shopping_carts:
+                    if key in shopping_carts and shopping_carts[key] > 0:
                         shopping_cart[key] -= value
 
             if menu_elli == "Yogurt":
@@ -161,7 +161,7 @@ if st.session_state.page == 'Order Now':
                     key = "Yogurt"
                     value = 2.49
                     count -= 1
-                    if key in shopping_carts:
+                    if key in shopping_carts and shopping_carts[key] > 0:
                         shopping_cart[key] -= value
                 
                 if elli_opening_time <= current_time <= elli_closing_time:
