@@ -59,7 +59,7 @@ if st.session_state.page == 'Order Now':
             for i in menu_elli:
                 if  i:
                     menu_items[i]=menu_items.get(i,0)
-                    value=d.get(keys,0)
+                    value=menu_items.get(i,0)
                     count+=1
                     value=count*value
             col2.write(value)
