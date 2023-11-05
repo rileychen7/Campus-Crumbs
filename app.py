@@ -95,6 +95,7 @@ if st.session_state.page == 'Order Now':
                     st.session_state['menu_itmes']['value'] = final_value
             
                 st.write(f"Value: {st.session_state['menu_items']['value']}")
+            st.write(main())
 
 
     
