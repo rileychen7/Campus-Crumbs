@@ -56,8 +56,7 @@ if st.session_state.page == 'Order Now':
             count = 0
             value=0
             add_item=st.button("ADD")
-            for i in range(len(menu_elli):
-                
+            for i in range(len(menu_elli)):
                 if add_item:
                     count+=1
                     menu_items["Chips"]=menu_items.get("Chips",0)
