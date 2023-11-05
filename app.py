@@ -551,7 +551,12 @@ if st.session_state.page == 'Home Page':
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-
+                
+    if delivery_location == 'The Commons':
+        st.markdown("You've selected delivery to The Commons.")
+        restaurant_south = st.selectbox("Select a restaurant from The Commons", ['Poke Factory', 'AK Korean', 'Dancing Chopsticks','Bollywood Bistro','Chick-Mex Grill','La Rosa', 'Young Chow'])
+        st.header("The Commons")
+        
     if delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
         restaurant_south = st.selectbox("Select a restaurant from South Campus", ['Main Street Store', 'Harriman Cafe', 'Whispers Cafe at Abbott'])
