@@ -232,6 +232,7 @@ if st.session_state.page == 'Home Page':
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
+    
     if delivery_location=="Show All Restaurants":
         st.header("Menu Selection")
         st.write("Browse the menu and select your favorite items")
@@ -618,6 +619,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Teddy's")
             col2.write("Teddy's is our convenience store in Governors!")
             col2.subheader("Menu")
+            menu_items = {
+                "Chips": "$2.99",
+                "Soda": "$1.99",
+                "Sandwich": "$4.99",
+                "Salad": "$5.99",
+                "Fruit Cup": "$3.99",
+                "Yogurt": "$2.49
+    }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
             
         elif restaurant_governers == "The Cellar":
@@ -626,7 +638,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("The Cellar")
             col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
             col2.subheader("Menu")
-            menu_items_cellar = {
+            menu_items = {
                 "Pancakes": "$6.99",
                 "Bacon & Eggs": "$8.99",
                 "French Toast": "$7.99",
@@ -635,7 +647,7 @@ if st.session_state.page == 'Home Page':
                 "Salad": "$5.99"
     }
 
-            for item, price in menu_items_cellar.items():
+            for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
 if st.session_state.page == 'Restaurants':
