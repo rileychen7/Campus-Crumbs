@@ -84,7 +84,8 @@ if st.session_state.page == 'Order Now':
                 if Y:
                     count+=1
                     
-                    calculate_value(count,value)
+                    X=calculate_value(count,value)
+                    st.write(X)
             
 
 
