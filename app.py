@@ -116,4 +116,55 @@ if st.session_state.page == 'Restaurants':
     col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas, and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
 
     col1, col2 = st.columns([1, 3])  
-    col1.image("main_street_market.png", use_column
+    col1.image("whispers_caf_at_abbott.png", use_column_width=True)
+    col2.subheader("Whispers Café at Abbott")
+    col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
+
+    # Governors
+    st.header("Governors")
+    col1, col2 = st.columns([1, 3])  
+    col1.image("governors_dining_center.png", use_column_width=True)
+    col2.subheader("Governors Dining Center")
+    col2.write("Students from Dewey, Roosevelt, Clinton, and Lehman Halls will find something for every appetite. Our all-you-care-to-eat dinner choices range from selections in the Comfort Foods section to our International Station. Favorites such as pizza, pasta bar, hand-carved meats, signature salads, health bar, hot soups, and vegetarian/vegan meals round out the selections. Of course, we can't forget to tell you about the desserts — there's a wide selection, so there's bound to be something to satisfy your sweet tooth.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("tt.png", use_column_width=True)
+    col2.subheader("Teddy's")
+    col2.write("Teddy's is our convenience store in Governors!")
+
+if st.session_state.page == 'Your Orders':
+    st.header("Cart")
+    
+    orders = pd.DataFrame({
+        'Order ID': [1, 2, 3],
+        'Items': ['Pan Asia - Protein', 'Tikka Table - Protein', 'All American Burger'],
+        'Total Price': ['$11.75', '$11.75', '$9.99'],
+        'Status': ['Delivered', 'In Progress', 'Delivered']
+    })
+
+    st.subheader("Order History")
+    st.dataframe(orders)
+    
+    if st.button("Place New Order"):
+        st.write("Add order items to the cart and proceed to checkout.")
+    
+    if st.button("Clear Cart"):
+        st.session_state.cart = []
+        st.write("Your cart has been cleared.")
+
+    # Display the cart content
+    if st.session_state.cart:
+        st.subheader("Items in Cart")
+        for item in st.session_state.cart:
+            st.write(item)
+    else:
+        st.write("Your cart is empty.")
+
+    # Add input fields and button to add items to the cart
+    item_name = st.text_input("Item Name")
+    item_quantity = st.number_input("Quantity", min_value=1, value=1)
+    if st.button("Add to Cart"):
+        if item_name and item_quantity:
+            item_info = f"{item_name} - Quantity: {item_quantity}"
+            st.session_state.cart.append(item_info)
+
