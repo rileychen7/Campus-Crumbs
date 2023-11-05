@@ -3,10 +3,8 @@ import streamlit as st
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-# Set the path to your background image (example using a local image)
-background_image = "food.png"
+background_image = "./food.png"
 
-# Display the background image using Streamlit's built-in feature
 st.image(background_image, use_column_width=True)
 
 st.title("StudiFood")
