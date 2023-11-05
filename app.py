@@ -23,8 +23,9 @@ if 'page' not in st.session_state:
 
 st.sidebar.header("Navigation")
 
-
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Restaurants', 'Your Orders'])
+
+shopping_cart = {}
 
 if st.session_state.page == 'Order Now':
     st.header("Welcome to Campus Crumbs!")
