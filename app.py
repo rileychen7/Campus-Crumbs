@@ -81,9 +81,10 @@ if st.session_state.page == 'Order Now':
                 Y=st.button(key)
                 
                 value=menu_items.get(key,0)
-                if Y:
-                    count+=1
-                    
+                for i in range(0,10):
+                    if Y:
+                        count+=1
+                        
                 X=calculate_value(count,value)
                 st.write(X)
             
