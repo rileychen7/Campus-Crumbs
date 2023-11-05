@@ -1,18 +1,19 @@
 import pandas as pd
 import streamlit as st
 
+import streamlit as st
+from PIL import Image
 
-background_image_path = 'food.jpeg'
-css = f"""
+def set_background(background_image):
+    page_bg = '''
     <style>
-        body {{
-            background-image: url('food.jpeg');
-            background-size: cover;
-        }}
+    body {
+    background-image: url("fooddelivery.jpeg");
+    background-size: cover;
+    }
     </style>
-"""
-
-
+    '''
+    st.markdown(page_bg, unsafe_allow_html=True)
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
