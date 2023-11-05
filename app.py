@@ -232,8 +232,9 @@ if st.session_state.page == 'Home Page':
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-
-   if delivery_location == "The Commons":
+                
+                
+    if delivery_location == "The Commons":
         st.markdown("You've selected delivery to The Commons.")
         restaurant_commons = st.selectbox("Select a restaurant in The Commons", ['Young Chow', 'Poke Factory', 'La Rosa', 'AK Korean', 'Chick-Mex Grill', 'Bollywood Bistro', 'Dancing Chopsticks'])
         st.header("The Commons")
