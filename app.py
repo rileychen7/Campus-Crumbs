@@ -257,25 +257,7 @@ if st.session_state.page == 'Home Page':
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-
-        elif restaurant_north == "Tims":
-            col1, col2 = st.columns([1, 3])  
-            col1.image("tims.png", use_column_width=True)
-            col2.subheader("Tim Hortons")
-            col2.write("Hot, fresh coffee and delicious baked goods. Serving a variety of muffins, bagels, doughnuts, and more!")
-            st.subheader("Menu")
-
-            menu_items = {
-                "Coffee (Small)": "$2.49",
-                "French Vanilla Cappuccino (Medium)": "$3.99",
-                "Timbits (20 Pack)": "$6.99",
-                "Bagel with Cream Cheese": "$3.49",
-                "Chocolate Dip Donut": "$1.99",
-                "Breakfast Wrap": "$5.99"
-            }
-
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+                
             
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
