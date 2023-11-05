@@ -67,7 +67,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
 
     col1, col2 = st.columns([1, 3])  
     col1.image("panasia.png", use_column_width=True)
-    col2.subheader("Champa Sushi")
+    col2.subheader("Pan Asia")
     col2.write("Flavors from China, Korea and Taiwan abound in a variety of dishes on a rotating basis.")
 
     col1, col2 = st.columns([1, 3])  
