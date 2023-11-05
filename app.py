@@ -24,10 +24,10 @@ if 'page' not in st.session_state:
 nav_bar_css = """
 <style>
 .sidebar .css-17h2l1e a {
-    color: #333; /* Text color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px 0; /* Spacing between items */
-    transition: background-color 0.3s; /* Hover effect transition */
+    color: #333; 
+    text-decoration: none; 
+    padding: 10px 0; 
+    transition: background-color 0.3s; 
 }
 
 .sidebar .css-17h2l1e a:hover {
