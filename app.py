@@ -84,6 +84,18 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Hubies")
             col2.write("Hubies in the Ellicott Food Court has a little of everything. Hot, fresh pizza? - you bet - it's a UB tradition. And nobody does wings, fingers and subs like Hubies.")
             col2.subheader("Menu")
+            menu_items = {
+                "Cheese Pizza": "$10.99",
+                "Pepperoni Pizza": "$11.99",
+                "Buffalo Chicken Wings (10 pcs)": "$9.99",
+                "Chicken Tenders (6 pcs)": "$7.99",
+                "Philly Cheesesteak Sub": "$8.99",
+                "Vegetarian Sub": "$7.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
+
             
         elif restaurant_ellicott == "Wrap it Up":
             col1, col2 = st.columns([1, 3])  
