@@ -163,7 +163,10 @@ if st.session_state.page == 'Home Page':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
+            
         elif restaurant_ellicott == "The Bowl":
+            bowl_opening_time = current_time.replace(hour=11, minute=00, second=0)
+            bowl_closing_time = current_time.replace(hour=16, minute=00, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("thebowl.png", use_column_width=True)
             col2.subheader("The Bowl")
@@ -177,11 +180,16 @@ if st.session_state.page == 'Home Page':
                 "Caesar Salad": "$6.99",
                 "Fruit Salad": "$3.99"
             }
-
+            if bowl_opening_time <= current_time <= bowl_closing_time:
+                st.info("The Bowl is currently open from 11:00 AM to 4:000 PM.")
+            else:
+                st.warning("The Bowl it up is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
         elif restaurant_ellicott == "Guac and Roll":
+            gnr_opening_time = current_time.replace(hour=11, minute=00, second=0)
+            gnr_closing_time = current_time.replace(hour=20, minute=30, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("guacandroll.png", use_column_width=True)
             col2.subheader("Guac and Roll")
@@ -195,11 +203,16 @@ if st.session_state.page == 'Home Page':
                 "Quesadilla": "$6.99",
                 "Mexican Rice": "$2.99"
             }
-
+            if gnr_opening_time <= current_time <= gnr_closing_time:
+                st.info("Guac and Roll it up is currently open from 11:00 AM to 8:30 PM.")
+            else:
+                st.warning("Guac and Roll it up is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
         elif restaurant_ellicott == "Perks":
+            p_opening_time = current_time.replace(hour=8, minute=00, second=0)
+            p_closing_time = current_time.replace(hour=16, minute=00, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("perks.png", use_column_width=True)
             col2.subheader("Perks")
@@ -213,7 +226,10 @@ if st.session_state.page == 'Home Page':
                 "Cookie": "$1.99",
                 "Ice Cream Sundae": "$5.99"
             }
-
+            if p_opening_time <= current_time <= p_closing_time:
+                st.info("Perks is currently open from 8:00 AM to 4:00 PM.")
+            else:
+                st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
     if delivery_location=="Show All Restaurants":
