@@ -626,7 +626,7 @@ if st.session_state.page == 'Order Now':
                 "Garlic Mashed Potatoes": "$4.99"
     }
 
-             for item in menu_items.keys():
+            for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
             
