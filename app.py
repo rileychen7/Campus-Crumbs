@@ -1,6 +1,19 @@
 import pandas as pd
 import streamlit as st
 
+background_image_path = "imagebg.jpeg"
+
+css = f"""
+    <style>
+        body {{
+            background-image: url('imagebg.jpeg');
+            background-size: cover;
+        }}
+    </style>
+"""
+
+st.markdown(css, unsafe_allow_html=True)
+
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
