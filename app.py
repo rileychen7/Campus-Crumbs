@@ -1,5 +1,4 @@
 import pandas as pd
-import streamlit as st
 from PIL import Image
 import streamlit as st
 from datetime import datetime
@@ -8,16 +7,6 @@ import pytz
 est = pytz.timezone("US/Eastern")
 current_time = datetime.now(est)
 
-def set_background(background_image):
-    page_bg = '''
-    <style>
-    body {
-    background-image: url("fooddelivery.jpeg");
-    background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg, unsafe_allow_html=True)
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
