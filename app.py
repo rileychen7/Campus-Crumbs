@@ -232,6 +232,9 @@ if st.session_state.page == 'Home Page':
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
+
+    if delivery_location=="The Commons":
+        
     
     if delivery_location=="Show All Restaurants":
         st.header("Menu Selection")
