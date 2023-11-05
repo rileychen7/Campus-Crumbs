@@ -788,7 +788,7 @@ if st.session_state.page == 'Register To Deliver':
         st.write("Thank you for registering!")
             
 
-if st.session_state.page == 'Your Orders':
+"""if st.session_state.page == 'Your Orders':
     st.header("Your Orders")
     past_orders = [
     {"order_id": 1, "date": "2023-10-01", "items": ["Pizza", "Soda", "Salad"], "total": 20.0},
@@ -806,6 +806,7 @@ if past_orders:
         st.write(f"Items: {', '.join(order['items'])}")
         st.write(f"Total: ${order['total']:.2f}")
         st.write("-----")
+"""
     
 #Names
 st.markdown("---")
