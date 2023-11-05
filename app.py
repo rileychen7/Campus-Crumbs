@@ -474,8 +474,8 @@ if st.session_state.page == 'Home Page':
             col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
             col2.subheader("Menu")
             menu_items = {
-        "Chicken Sandwhich": "$24.99",
-        "Salmon with Lemon Butter": "$18.99",
+        "Chicken Sandwhich": "$12.99",
+        "Grilled Cheese": "$11.99",
         "BBQ Pulled Pork Sandwich": "$12.99",
         "Vegetarian Grilled Portobello": "$14.99",
         "Grilled Asparagus": "$6.99",
