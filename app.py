@@ -41,6 +41,8 @@ if st.session_state.page == 'Home Page':
         restaurant_ellicott = st.selectbox("Select a restaurant in Ellicott", ['The Elli', 'Au Bon Pain', 'Hubies', 'Wrap it Up', 'Sizzles', 'The Bowl', 'Guac and Roll', 'Perks'])
         st.header("Ellicott | Greiner Hall")
 
+        elli_opening_time = current_time.replace(hour=12, minute=0, second=0, microsecond=0)
+        elli_closing_time = current_time.replace(hour=21, minute=0, second=0, microsecond=0)
         if restaurant_ellicott == "The Elli":
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
@@ -54,6 +56,10 @@ if st.session_state.page == 'Home Page':
                 "Fruit Cup": "$3.99",
                 "Yogurt": "$2.49"
             }
+            if elli_opening_time <= current_time <= elli_closing_time:
+                st.info("Elli is currently open from 12 PM to 9 PM.")
+            else:
+                st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
         
