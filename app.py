@@ -78,7 +78,7 @@ if st.session_state.page == 'Order Now':
             def main():
               
             
-                if 'menu_itmes' not in st.session_state:
+                if 'menu_items' not in st.session_state:
                     st.session_state['menu_items'] = {'value': 0}
             
                 if st.button('Click me'):
@@ -86,9 +86,8 @@ if st.session_state.page == 'Order Now':
                     count += 1
                     st.session_state['menu_items']['value'] = value * (count + 1)  # Update value in dictionary
             
-                st.write(f"Value: {st.session_state['counter_dict']['value']}")
+            st.write(f"Value: {st.session_state['counter_dict']['value']}")
             
-            st.write(main())
 
           
     
