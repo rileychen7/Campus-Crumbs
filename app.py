@@ -197,6 +197,7 @@ if st.session_state.page == 'Home Page':
             col1.image("champa.png", use_column_width=True)
             col2.subheader("Champa Sushi")
             col2.write("Order Champa Sushi in the Student Union for some fresh sushi!")
+            col2.subheader("Menu")
             menu_items = {
                 "California Roll": "$8.99",
                 "Spicy Tuna Roll": "$9.99",
@@ -214,56 +215,57 @@ if st.session_state.page == 'Home Page':
             col1.image("jamba.png", use_column_width=True)
             col2.subheader("Jamba")
             col2.write("Stop in and enjoy the world's freshest, most fruit-filling experience. Jamba in the Student Union has a wide variety for smoothies, fruit juices and so much more.")
-
+            col2.subheader("Menu")
+            
         elif restaurant_north == "Moes":
             col1, col2 = st.columns([1, 3])  
             col1.image("moes.png", use_column_width=True)
             col2.subheader("Moe's")
             col2.write("Moe’s Southwest Grill in the Student Union is a fun and engaging fast-casual concept serving a wide variety of fresh, made-to-order southwest fare")
-            
+            col2.subheader("Menu")
         elif restaurant_north == "Pistachios":
             col1, col2 = st.columns([1, 3])  
             col1.image("pistachios.png", use_column_width=True)
             col2.subheader("Pistachio's")
             col2.write("""Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli.
             At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
-
+            col2.subheader("Menu")
         elif restaurant_north == "Tims":
             col1, col2 = st.columns([1, 3])  
             col1.image("tims.png", use_column_width=True)
             col2.subheader("Tim Hortons")
             col2.write("Hot, fresh coffee and delicious baked goods. Serving a variety of muffins, bagels, doughnuts and more!")
-        
+            col2.subheader("Menu")
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
             col1.image("kali.png", use_column_width=True)
             col2.subheader("Kali Orexi")
             col2.write("Mediterranean cuisine and fare from Middle Eastern countries. Here you will find marinated choice cuts of meats, ancient grains, and regional spices.")
-
+            col2.subheader("Menu")
         elif restaurant_north == "Tikka Table":
             col1, col2 = st.columns([1, 3])  
             col1.image("tikka.png", use_column_width=True)
             col2.subheader("Tikka Table")
             col2.write("Traditional dishes with flavorful spices from the different regions of India.")
-
+            col2.subheader("Menu")
         elif restaurant_north == "1846 Grill":
             col1, col2 = st.columns([1, 3])  
             col1.image("1846.png", use_column_width=True)
             col2.subheader("1846 Grill")
             col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
-
+            col2.subheader("Menu")
         elif restaurant_north == "Panasia":
             col1, col2 = st.columns([1, 3])  
             col1.image("panasia.png", use_column_width=True)
             col2.subheader("Pan Asia")
             col2.write("Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.")
-
+            col2.subheader("Menu")
         elif restaurant_north == "Noodle Pavilion":
             col1, col2 = st.columns([1, 3])  
             col1.image("noodle.png", use_column_width=True)
             col2.subheader("Noodle Pavilion")
             col2.write("Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.")
-
+            col2.subheader("Menu")
 
     if delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
@@ -275,7 +277,7 @@ if st.session_state.page == 'Home Page':
             col1.image("main_street_store.png", use_column_width=True)
             col2.subheader("Main Street Store")
             col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.")
-
+            col2.subheader("Menu")
         elif restaurant_south == "Harriman Cafe":
             col1, col2 = st.columns([1, 3])  
             col1.image("harriman_caf.png", use_column_width=True)
