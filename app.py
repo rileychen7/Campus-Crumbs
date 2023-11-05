@@ -8,7 +8,7 @@ st.set_page_config(page_title="StudiFood", page_icon="🍔")
 st.title("StudiFood")
 
 st.sidebar.header("Navigation")
-page = st.sidebar.selectbox("Select a page", [Home Page', 'Restaurants', 'Your Orders'])
+page = st.sidebar.selectbox("Select a page", ['Home Page', 'Restaurants', 'Your Orders'])
 
 if page == 'Home Page':
     st.header("Welcome to StudiFood!")
