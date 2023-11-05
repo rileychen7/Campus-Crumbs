@@ -274,7 +274,7 @@ if st.session_state.page == 'Restaurants':
     col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
 
     # Governors
-     st.header("Governors")
+    st.header("Governors")
     col1, col2 = st.columns([1, 3])  
     col1.image("the_cellar.png", use_column_width=True)
     col2.subheader("The Cellar")
