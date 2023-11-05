@@ -771,26 +771,28 @@ if st.session_state.page == 'Restaurants':
 
     st.header("The Commons")
 
-    col1, col2 = st.columns([1, 3])  
+    col1, col2 = st.columns([1, 3])
     col1.image("youngchow.png", use_column_width=True)
     col2.subheader("Young Chow")
     col2.write("Savor the delicious flavors of Chinese cuisine at our restaurant, where our skilled chefs create traditional dishes with a modern twist using the freshest ingredients. Our welcoming ambiance and attentive staff ensure a memorable dining experience for all.")
 
-    col1, col2 = st.columns([1, 3])  
+
+    col1, col2 = st.columns([1, 3])
     col1.image("poke.png", use_column_width=True)
     col2.subheader("Poke Factory")
     col2.write("Experience the vibrant and healthy flavors of Hawaii at our poke bowl restaurant. Create your own customized bowl with fresh, high-quality ingredients, or choose from our chef's delectable signature creations, all served in a relaxed and inviting atmosphere.")
 
-    col1, col2 = st.columns([1, 3])  
+
+    col1, col2 = st.columns([1, 3])
     col1.image("larosa.png", use_column_width=True)
     col2.subheader("La Rosa")
     col2.write("Delight in the timeless comfort of pizza at our restaurant, where every slice is a delicious combination of fresh, premium ingredients and a perfect crust. From classic favorites like Margherita and Pepperoni to innovative specialty pizzas, we serve up a slice of heaven.")
 
-    col1, col2 = st.columns([1, 3])  
+
+    col1, col2 = st.columns([1, 3])
     col1.image("ak.png", use_column_width=True)
     col2.subheader("AK Korean")
-    col2.write("Embark on a culinary journey to the heart of Korea at our restaurant, where we serve up the ultimate in Korean comfort food. Our menu is a celebration of rich and flavorful dishes like bibimbap, bulgogi, and kimchi stew,")
-
+    col2.write("Embark on a culinary journey to the heart of Korea at our restaurant, where we serve up the ultimate in Korean comfort food. Our menu is a celebration of rich and flavorful dishes like bibimbap, bulgogi, and kimchi stew.")
     
     st.header("Governors")
     
