@@ -190,9 +190,7 @@ if st.session_state.page == 'Your Orders':
     st.subheader("Order History")
     st.dataframe(orders)
     
-    if st.button("Place New Order"):
-        st.write("Add order items to the cart and proceed to checkout.")
-    
+
     if st.button("Clear Cart"):
         st.session_state.cart = []
         st.write("Your cart has been cleared.")
