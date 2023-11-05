@@ -80,7 +80,7 @@ if st.session_state.page == 'Order Now':
             for key in menu_items:
                 Y=st.button(key)
                 
-                
+                st.session_state['count']=0
                 if Y:
                     value=menu_items.get(key,0)
                     st.session_state['count'] *= value
