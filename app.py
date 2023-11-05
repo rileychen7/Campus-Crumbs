@@ -45,7 +45,7 @@ if st.session_state.page == 'Order Now':
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
             col2.subheader("Menu")
             menu_items = {
-                "Chips": "$2.99",
+                "Chips": "$"2.99,
                 "Soda": "$1.99",
                 "Sandwich": "$4.99",
                 "Salad": "$5.99",
