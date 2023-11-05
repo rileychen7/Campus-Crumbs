@@ -54,10 +54,9 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": 2.49
             }
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-            add_button = st.button("add")
-            add_but = True
+            
             if menu_elli == "Chips":
-                While add_but:
+                if st.button("ADD"):
                     key = "Chips"
                     value = 2.99
                     count += 1
