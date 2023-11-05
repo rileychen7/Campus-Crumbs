@@ -103,6 +103,18 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Wrap it up")
             col2.write("Make mine a wrap! It will be hard to choose from all the varieties of wraps we offer at Wrap it Up in the Ellicott Food Court. Whether it's filled with meat, eggs, vegetables or even fruit, we've got a wrap variety that will soon become your favorite. As a side, we offer hearty soups and salted snacks. This is also the place for bagels; top one with butter, one of our flavored cream cheeses, or add meat and cheese to make a sandwich.")
             col2.subheader("Menu")
+            menu_items = {
+                "Chicken Caesar Wrap": "$8.99",
+                "Veggie Wrap": "$7.99",
+                "Fruit Salad": "$3.99",
+                "Soup of the Day": "$4.99",
+                "Bagel with Cream Cheese": "$2.99",
+                "Turkey Club Wrap": "$9.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
+
             
         elif restaurant_ellicott == "Sizzles":
             col1, col2 = st.columns([1, 3])  
