@@ -91,8 +91,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Au Bon Pain is currently open from 10:30 AM to 8:30 PM.")
             else:
                 st.warning("Au Bon Pain is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
                 
         elif restaurant_ellicott == "Hubies":
             hubies_opening_time = current_time.replace(hour=5, minute=00, second=0)
@@ -114,8 +115,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Hubies is currently open from 5:00 PM to 10:00 PM.")
             else:
                 st.warning("Hubies is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
 
             
         elif restaurant_ellicott == "Wrap it Up":
@@ -138,8 +140,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Wrap it up is currently open from 7:00 PM to 3:00 PM.")
             else:
                 st.warning("Wrap it up is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
 
             
         elif restaurant_ellicott == "Sizzles":
@@ -162,8 +165,9 @@ if st.session_state.page == 'Home Page':
                 st.info("sizzles is currently open from 10:00 AM to 8:30 PM.")
             else:
                 st.warning("Sizzles is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
 
             
         elif restaurant_ellicott == "The Bowl":
@@ -186,8 +190,9 @@ if st.session_state.page == 'Home Page':
                 st.info("The Bowl is currently open from 11:00 AM to 4:000 PM.")
             else:
                 st.warning("The Bowl is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_ellicott == "Guac and Roll":
             gnr_opening_time = current_time.replace(hour=11, minute=00, second=0)
@@ -209,8 +214,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Guac and Roll is currently open from 11:00 AM to 8:30 PM.")
             else:
                 st.warning("Guac and Roll is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_ellicott == "Perks":
             p_opening_time = current_time.replace(hour=8, minute=00, second=0)
@@ -232,8 +238,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Perks is currently open from 8:00 AM to 4:00 PM.")
             else:
                 st.warning("Perks is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
     
     
     if delivery_location=="Show All Restaurants":
