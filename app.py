@@ -58,8 +58,8 @@ if st.session_state.page == 'Order Now':
             add_item=st.button("ADD")
             if add_item:
                 count+=1
-                menu_items[key]=menu_items(get[key],0)
-                value=menu_items(get[key],0)
+                menu_items[key]=menu_items.get(key,0)
+                value=menu_items.get(key,0)
                 value=value*count
             col2.write(value)
             if elli_opening_time <= current_time <= elli_closing_time:
