@@ -67,12 +67,11 @@ if page == 'Restaurants':
             ("Champa Sushi", "Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.", "panasia.png"),
             ("Noodle Pavilion", "Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.", "noodle.png"),
         ],
-        'South Campus': [
-            ("Main Street Store", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.", "main_street_store.png"),
-            ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus.")
+       'South Campus': [
+    ("Main Street Store", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.", "main_street_store.png"),
+    ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus.")  # Missing closing parenthesis
+]
 
-if page == 'Your Orders':
-    st.header("Cart")
     st.write("View your previous orders and their status")
 
     
