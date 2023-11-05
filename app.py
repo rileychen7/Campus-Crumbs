@@ -246,6 +246,12 @@ if st.session_state.page == 'Home Page':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
+        elif restaurant_north == "Pistachios":
+            col1, col2 = st.columns([1, 3])  
+            col1.image("pistachios.png", use_column_width=True)
+            col2.subheader("Pistachio's")
+            col2.write("""Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli.
+    At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
             
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
