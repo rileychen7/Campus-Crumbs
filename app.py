@@ -85,8 +85,8 @@ if st.session_state.page == 'Order Now':
             
                 count = st.session_state['count']
                 value = st.session_state['menu_items']['value']
-            
-                if st.button('Click me'):
+                click_me=st.button('Click me')
+                if click_me:
                     count = count + 1 if 'count' in st.session_state else 1
                     st.session_state['count'] = count
             
