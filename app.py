@@ -483,8 +483,8 @@ if st.session_state.page == 'Home Page':
         "Kung Pao Tofu": "$9.49"
     }
 
-    for item, price in menu_items_panasia.items():
-        col2.write(f"- {item}: {price}")
+            for item, price in menu_items_panasia.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Noodle Pavilion":
             col1, col2 = st.columns([1, 3])  
