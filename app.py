@@ -4,6 +4,22 @@ import streamlit as st
 # Set page title and icon
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
+# Add your background image here
+background_image_url = 'fooddelivery.jpeg'
+
+# Define the CSS to set the background image
+page_bg_img = f'''
+<style>
+body {{
+    background-image: url("{background_image_url}");
+    background-size: cover;
+}}
+</style>
+'''
+
+# Use st.markdown to add the CSS for the background image
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.title("StudiFood")
 
 st.sidebar.header("Navigation")
@@ -21,28 +37,9 @@ if page == 'Home Page':
     elif delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
 
-# Add your background image here
-background_image_url = 'fooddelivery.jpeg'
-
-# Define the CSS to set the background image
-page_bg_img = f'''
-<style>
-body {{
-    background-image: url("{background_image_url}");
-    background-size: cover;
-}}
-</style>
-'''
-
-# Use st.markdown to add the CSS for the background image
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# Content of the Streamlit app goes here
-st.title('Streamlit App with Background Image')
-
 if page == 'Restaurants':
     st.header("Menu Selection")
-    st.write("Browse the menu and select your favorite items.")
+    st.write("Browse the menu and select your favorite items")
     
     restaurant_locations = {
         'Ellicott | Greiner Hall': [
@@ -67,10 +64,9 @@ if page == 'Restaurants':
             ("Champa Sushi", "Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.", "panasia.png"),
             ("Noodle Pavilion", "Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.", "noodle.png"),
         ],
-       'South Campus': [
-    ("Main Street Store", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.", "main_street_store.png"),
-    ("Main Street Market", "The Main Street Store is located inside Goodyear Dining Center on South Campus.")  # Missing closing parenthesis
-]
+        'South Campus': [
+            ("Main Street Store", "The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries
+
 
 if page == 'Your Orders':
     st.header("Cart")
