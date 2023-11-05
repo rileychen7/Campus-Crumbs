@@ -816,7 +816,7 @@ if st.session_state.page == 'Restaurants':
     col1, col2 = st.columns([1, 3])  
     col1.image("tt.png", use_column_width=True)
     col2.subheader("Teddy's")
-    col2.write("Teddy's is our convenience store in Governors!")
+    col2.write("Teddy's is our convenience store in Governors! Grab a quick snack!")
 
 if st.session_state.page == 'Your Orders':
     st.header("Cart")
