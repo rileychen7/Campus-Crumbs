@@ -1,15 +1,13 @@
 import pandas as pd
 import streamlit as st
-from PIL import Image
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-background_image = "food.png"  
-background = Image.open(background_image)
-st.image(background, use_column_width=True)
+# Set the path to your background image (example using a local image)
+background_image = "food.png"
 
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
+# Display the background image using Streamlit's built-in feature
+st.image(background_image, use_column_width=True)
 
 st.title("StudiFood")
 
@@ -23,10 +21,7 @@ if page == 'Home Page':
     delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus'])
     if delivery_location == 'Ellicott | Greiner Hall':
         st.markdown("You've selected delivery from Ellicott | Greiner Hall.")
-        col1, col2 = st.columns([1, 3])  
-        col1.image("TheElli.png", use_column_width=True)
-        col2.subheader("The Elli")
-        col2.write("The Elli is our convenience store in the Ellicott Food Court!")
+        # ... Rest of your code ...
     elif delivery_location == 'North Campus Academic Buildings':
         st.markdown("You've selected delivery to North Campus Academic Buildings.")
     elif delivery_location == 'South Campus':
