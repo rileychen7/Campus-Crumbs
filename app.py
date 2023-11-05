@@ -55,13 +55,12 @@ if st.session_state.page == 'Order Now':
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
             count = 0
             value=0
-            for i in range(len(menu_elli)):
-                if  menu_elli[i]:
-                    x=menu_elli[i]
-                    x[i]=menu_items.get(x,0)
-                    value=menu_items.get(x,0)
-                    count+=1
-                    value=count*value
+            add_item=st.button("ADD")
+            if add_item:
+                count+=1
+                menu_items[key]=menu_items(get[key],0)
+                value=menu_items(get[key],0)
+                value=value*count
             col2.write(value)
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
