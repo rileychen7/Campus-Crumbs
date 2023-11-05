@@ -625,7 +625,7 @@ if st.session_state.page == 'Home Page':
                 "Sandwich": "$4.99",
                 "Salad": "$5.99",
                 "Fruit Cup": "$3.99",
-                "Yogurt": "$2.49
+                "Yogurt": "$2.49"
     }
 
             for item, price in menu_items.items():
