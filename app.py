@@ -3,24 +3,6 @@ import streamlit as st
 from datetime import datetime
 import pytz
 
-bg_image = """
-<style>
-[data-testid="stAppViewContainer"]{
-background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fbb%2F4a%2F44%2Fbb4a440abf2ef89e25f5ff64b7034c6d.jpg&tbnid=JTw2rHapepoeoM&vet=12ahUKEwiP-aLT06yCAxXqIGIAHQXRBmEQMygAegQIARBn..i&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F527906387575315065%2F&docid=EorGJ4tWyXqXgM&w=960&h=450&q=food%20delivery%20background&client=safari&ved=2ahUKEwiP-aLT06yCAxXqIGIAHQXRBmEQMygAegQIARBn")
-background-size: cover;
-}
-
-[data-testid="stHeader"]{
-background-color: rgba(0, 0, 0, 0);
-}
-
-[data-testid="stToolbar]{
-right: 2rem;
-}
-</style>
-"""
-
-
 est = pytz.timezone("US/Eastern")
 current_time = datetime.now(est)
 
@@ -138,7 +120,7 @@ if st.session_state.page == 'Order Now':
                 col2.write(f"{item}: {price}")
                 
         elif restaurant_ellicott == "Hubies":
-            hubies_opening_time = current_time.replace(hour=5, minute=00, second=0)
+            hubies_opening_time = current_time.replace(hour=17, minute=00, second=0)
             hubies_closing_time = current_time.replace(hour=22, minute=00, second=0)
             col1, col2 = st.columns([1, 3])  
             col1.image("hubies.png", use_column_width=True)
