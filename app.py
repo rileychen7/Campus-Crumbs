@@ -146,29 +146,26 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     col2.write ("Teddy's is our convenience store in Governors!")
 
 
-if page == 'Your Orders':
+if st.session_state.page == 'Your Orders':
     st.header("Cart")
-
     
     orders = pd.DataFrame({
         'Order ID': [1, 2, 3],
-        'Items': ['Pan Asia - Protien', 'Tikka Table - Protein', 'All American Burger'],
+        'Items': ['Pan Asia - Protein', 'Tikka Table - Protein', 'All American Burger'],
         'Total Price': ['$11.75', '$11.75', '$9.99'],
         'Status': ['Delivered', 'In Progress', 'Delivered']
     })
 
     st.subheader("Order History")
     st.dataframe(orders)
-
     
     if st.button("Place New Order"):
         st.write("Add order items to the cart and proceed to checkout.")
+    
     if st.button("Clear Cart"):
+        st.session_state.cart = []
         st.write("Your cart has been cleared.")
 
-if st.session_state.page == 'Your Orders':
-    st.header("Cart")
-    
     # Display the cart content
     if st.session_state.cart:
         st.subheader("Items in Cart")
@@ -177,12 +174,10 @@ if st.session_state.page == 'Your Orders':
     else:
         st.write("Your cart is empty.")
 
-    if st.button("Place New Order"):
-        # Add logic to add items to the cart and proceed to checkout
-        st.session_state.cart.append("Your new order item")  # Add your actual logic here
-        st.session_state.page = 'Checkout'  # You can redirect to a checkout page if needed
-
-    if st.button("Clear Cart"):
-        # Clear the cart
-        st.session_state.cart = []
-
+    # Add input fields and button to add items to the cart
+    item_name = st.text_input("Item Name")
+    item_quantity = st.number_input("Quantity", min_value=1, value=1)
+    if st.button("Add to Cart"):
+        if item_name and item_quantity:
+            item_info = f"{item_name} - Quantity: {item_quantity}"
+            st.session_state.cart.append(item_info)
