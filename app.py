@@ -42,7 +42,7 @@ if st.session_state.page == 'Home Page':
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
-            col2.subheader("Menu")
+            col1.subheader("Menu")
             menu_items = {
                 "Chips": "$2.99",
                 "Soda": "$1.99",
