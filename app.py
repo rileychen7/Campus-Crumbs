@@ -35,7 +35,7 @@ if st.session_state.page == 'Home Page':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus', 'Governers'])
+    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus', 'Governors'])
     if delivery_location == 'Ellicott | Greiner Hall':
         st.markdown("You've selected delivery to Ellicott.")
         restaurant_ellicott = st.selectbox("Select a restaurant in Ellicott", ['The Elli', 'Au Bon Pain', 'Hubies', 'Wrap it Up', 'Sizzles', 'The Bowl', 'Guac and Roll', 'Perks'])
