@@ -150,7 +150,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     
 
 
-if page == 'Your Cart':
+if page == 'Your Orders':
     st.header("Cart")
     st.write("View your previous orders and their status")
 
