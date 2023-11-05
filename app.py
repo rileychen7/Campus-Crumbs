@@ -473,6 +473,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("1846 Grill")
             col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
             col2.subheader("Menu")
+            menu_items = {
+        "Chicken Sandwhich": "$24.99",
+        "Salmon with Lemon Butter": "$18.99",
+        "BBQ Pulled Pork Sandwich": "$12.99",
+        "Vegetarian Grilled Portobello": "$14.99",
+        "Grilled Asparagus": "$6.99",
+        "Garlic Mashed Potatoes": "$4.99"
+    }
+
+            for item, price in menu_items.items():
+                st.write(f"- {item}: {price}")
             
         elif restaurant_north == "Pan Asia":
             col1, col2 = st.columns([1, 3])  
@@ -498,6 +509,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Noodle Pavilion")
             col2.write("Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.")
             col2.subheader("Menu")
+        menu_items = {
+        "Pad Thai": "$10.99",
+        "Japanese Ramen": "$11.99",
+        "Spaghetti Carbonara": "$12.99",
+        "Singapore Noodles": "$9.99",
+        "Soba Noodle Salad": "$8.99",
+        "Vegetable Lo Mein": "$8.99"
+    }
+
+            for item, price in menu_items.items():
+                st.write(f"- {item}: {price}")
 
     if delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
