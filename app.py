@@ -57,8 +57,8 @@ if st.session_state.page == 'Order Now':
         st.header("Ellicott | Greiner Hall")
 
         if restaurant_ellicott == "The Elli":
-            elli_opening_time = current_time.replace(hour=0, minute=0, second=0)
-            elli_closing_time = current_time.replace(hour=23, minute=59, second=59)
+            elli_opening_time = current_time.replace(hour=12, minute=0, second=0)
+            elli_closing_time = current_time.replace(hour=21, minute=0, second=0)
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
@@ -72,8 +72,6 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": 2.49
             }
             menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
-      
-          
     
             if menu_elli == "Chips":
                 if st.button("ADD"):
@@ -346,8 +344,6 @@ if st.session_state.page == 'Order Now':
 
     
     if delivery_location=="Show All Restaurants":
-        st.header("Menu Selection")
-        st.write("Browse the menu and select your favorite items")
         
         st.header("Ellicott | Greiner Hall")
         col1, col2 = st.columns([1, 3])  
@@ -463,8 +459,7 @@ if st.session_state.page == 'Order Now':
         col1.image("whispers_caf_at_abbott.png", use_column_width=True)
         col2.subheader("Whispers Café at Abbott")
         col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
-        
-            # Governors
+
         st.header("Governors")
         col1, col2 = st.columns([1, 3])  
         col1.image("the_cellar.png", use_column_width=True)
@@ -497,8 +492,9 @@ if st.session_state.page == 'Order Now':
                 "Vegetarian Tempura Roll": "$10.99"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
 
         elif restaurant_north == "Jamba":
             col1, col2 = st.columns([1, 3])  
@@ -515,8 +511,9 @@ if st.session_state.page == 'Order Now':
                 "Protein Power Smoothie": "$6.49"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Moes":
             col1, col2 = st.columns([1, 3])  
@@ -533,8 +530,9 @@ if st.session_state.page == 'Order Now':
                 "Taco Salad": "$7.99"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Pistachios":
             col1, col2 = st.columns([1, 3])  
@@ -552,8 +550,9 @@ if st.session_state.page == 'Order Now':
                 "Gourmet Grilled Cheese": "$6.99"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
 
         elif restaurant_north == "Tims":
             col1, col2 = st.columns([1, 3])  
@@ -570,8 +569,9 @@ if st.session_state.page == 'Order Now':
                 "Breakfast Wrap": "$5.99"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
@@ -588,8 +588,9 @@ if st.session_state.page == 'Order Now':
                 "Greek Salad": "$6.99"
             }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Tikka":
             col1, col2 = st.columns([1, 3])  
@@ -606,8 +607,9 @@ if st.session_state.page == 'Order Now':
                 "Garlic Naan": "$2.99"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "1846 Grill":
             col1, col2 = st.columns([1, 3])  
@@ -624,8 +626,9 @@ if st.session_state.page == 'Order Now':
                 "Garlic Mashed Potatoes": "$4.99"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Pan Asia":
             col1, col2 = st.columns([1, 3])  
@@ -642,8 +645,9 @@ if st.session_state.page == 'Order Now':
                 "Kung Pao Tofu": "$9.49"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
             
         elif restaurant_north == "Noodle Pavilion":
             col1, col2 = st.columns([1, 3])  
@@ -660,8 +664,9 @@ if st.session_state.page == 'Order Now':
         "Vegetable Lo Mein": "$8.99"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+             for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
                 
     if delivery_location == 'The Commons':
         st.markdown("You've selected delivery to The Commons.")
@@ -690,8 +695,10 @@ if st.session_state.page == 'Order Now':
                 "Granola Bar": "$1.29",
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
+                
             
         elif restaurant_south == "Harriman Cafe":
             col1, col2 = st.columns([1, 3])  
@@ -707,8 +714,10 @@ if st.session_state.page == 'Order Now':
                 "Veggie Wrap": "$5.99",
                 "Chips": "$1.29",
     }
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
+                
                 
         elif restaurant_south == "Whispers Cafe at Abbott":
             col1, col2 = st.columns([1, 3])  
@@ -724,8 +733,10 @@ if st.session_state.page == 'Order Now':
                 "Blueberry Muffin": "$2.99",
                 "Fresh Fruit Parfait": "$3.49",
     }
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
+                
 
     if delivery_location == 'Governors':
         st.markdown("You've selected delivery to Governers.")
@@ -747,8 +758,10 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": "$2.49"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+           for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
+                
             
             
         elif restaurant_governers == "The Cellar":
@@ -766,8 +779,10 @@ if st.session_state.page == 'Order Now':
                 "Salad": "$5.99"
     }
 
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                price = menu_items[item]
+                col2.write(f"{item}: {price}")
+                
 
 if st.session_state.page == 'Register To Deliver':
     st.header("Registration Form")
@@ -786,14 +801,14 @@ if st.session_state.page == 'Register To Deliver':
         st.write("Please upload your driver's license.")
         driver_license = st.file_uploader("Upload Driver's License")
 
-if st.button("Register"):
-        st.write("Thank you for registering!")
+    if st.button("Register"):
+            st.write("Thank you for registering!")
             
 if st.session_state.page == 'Your Orders':
     st.header("Your Orders")
     past_orders = [
-    {"order_id": 1, "date": "2023-10-01", "items": ["Pizza", "Soda", "Salad"], "total": 20.0},
-    {"order_id": 2, "date": "2023-10-15", "items": ["Burger", "Fries", "Milkshake"], "total": 15.0},
+    {"order_id": 1, "date": "2023-10-04", "items": ["Pizza", "Soda", "Salad"], "total": 20.0, "Location": "The Elli"},
+    {"order_id": 2, "date": "2023-10-04", "items": ["Burger", "Fries", "Milkshake"], "total": 15.0, "Location": "1846 Grill"},
     
 ]
 
