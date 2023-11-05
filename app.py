@@ -55,8 +55,9 @@ if st.session_state.page == 'Home Page':
                 st.info("Elli is currently open from 12 PM to 9 PM.")
             else:
                 st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
+            for item in menu_items.keys():
+                for price in menu_items.values():
+                    col2.write({item}: {price})
 
         elif restaurant_ellicott == "Au Bon Pain":
             au_bon_pain_opening_time = current_time.replace(hour=10, minute=30, second=0)
