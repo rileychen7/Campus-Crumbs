@@ -1,18 +1,18 @@
 import pandas as pd
 from PIL import Image
-import streamlit as st
+import streamlet as st
 from datetime import datetime
 import pytz
 
 est = pytz.timezone("US/Eastern")
 current_time = datetime.now(est)
 
-st.set_page_config(page_title="StudiFood", page_icon="🍔")
+st.set_page_config(page_title="Campus Crumbs", page_icon="🍔")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
 
 
-st.title("StudiFood")
+st.title("Campus Crumbs")
 
 if st.button("Cart"):
     st.session_state.page = 'Your Orders'
@@ -27,7 +27,7 @@ st.sidebar.header("Navigation")
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Home Page', 'Restaurants', 'Your Orders'])
 
 if st.session_state.page == 'Home Page':
-    st.header("Welcome to StudiFood!")
+    st.header("Welcome to Campus Crumbs!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
     delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus', 'Governors','Show All Restaurants','The Commons'])
