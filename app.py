@@ -14,34 +14,6 @@ if 'cart' not in st.session_state:
 logo = Image.open('logo1.png')
 st.image(logo, use_column_width=True)
 
-if st.button("Cart"):
-    st.session_state.page = 'Your Orders'
-
-if st.button("Register to Deliver!"):
-    st.session_state.page = 'Register To Deliver'
-
-
-
-if 'page' not in st.session_state:
-    st.session_state.page = 'Order Now'
-
-nav_bar_css = """
-<style>
-.sidebar .css-17h2l1e a {
-    color: #333; 
-    text-decoration: none; 
-    padding: 10px 0; 
-    transition: background-color 0.3s; 
-}
-
-.sidebar .css-17h2l1e a:hover {
-    background-color: #f0f0f0; 
-}
-</style>
-"""
-
-st.markdown(nav_bar_css, unsafe_allow_html=True)
-
 st.sidebar.header("Navigation")
 
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver'])
@@ -51,6 +23,12 @@ shopping_cart = {}
 count = 0
 
 if st.session_state.page == 'Order Now':
+    if st.button("Cart"):
+    st.session_state.page = 'Your Orders'
+
+    if st.button("Register to Deliver!"):
+        st.session_state.page = 'Register To Deliver'
+        
     st.header("Welcome to Campus Crumbs!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
