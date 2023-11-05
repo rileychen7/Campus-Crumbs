@@ -684,7 +684,6 @@ if st.session_state.page == 'Register To Deliver ':
             
 
 if st.session_state.page == 'Your Orders':
-    st.header("Cart")
     st.header("Your Orders")
 
 
