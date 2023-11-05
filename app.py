@@ -72,28 +72,105 @@ if st.session_state.page == 'Order Now':
                 "Fruit Cup": 3.99,
                 "Yogurt": 2.49
             }
-            menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-            menu_list= ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
-            add_item=st.button("ADD")
-            count=0
-            value=0
-            for i in menu_list:
-                for j in menu_items:
-                    
-                    if i==j and add_item:
-                        value=menu_items.get(i,0)
-                        count+=1
-                        value=count*value
-            st.write(value)
+            menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
+    
+            if menu_elli == "Chips":
+                if st.button("ADD")
+                    key = "Chips"
+                    value = 2.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Chips"
+                    value = 2.99
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
+                
+            if menu_elli == "Soda":
+                if st.button("ADD")
+                    key = "Soda"
+                    value = 1.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Soda"
+                    value = 1.99
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
 
-            
-            if elli_opening_time <= current_time <= elli_closing_time:
-                st.info("Elli is currently open from 12 PM to 9 PM.")
-            else:
-                st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
-            for item in menu_items.keys():
-                price = menu_items[item]
-                col2.write(f"{item}: {price}")
+            if menu_elli == "Sandwich":
+                if st.button("ADD")
+                    key = "Sandwich"
+                    value = 4.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Sandwich"
+                    value = 4.99
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
+
+            if menu_elli == "Salad":
+                if st.button("ADD")
+                    key = "Salad"
+                    value = 5.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Salad"
+                    value = 5.99
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
+
+            if menu_elli == "Fruit Cup":
+                if st.button("ADD")
+                    key = "Fruit CUp"
+                    value = 3.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Fruit Cup"
+                    value = 3.99
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
+
+            if menu_elli == "Yogurt":
+                if st.button("ADD")
+                    key = "Yogurt"
+                    value = 2.49
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+                elif st.button("REMOVE")
+                    key = "Yogurt"
+                    value = 2.49
+                    count -= 1
+                    if key in shopping_carts:
+                        shopping_cart[key] -= value
+                
+                if elli_opening_time <= current_time <= elli_closing_time:
+                    st.info("Elli is currently open from 12 PM to 9 PM.")
+                else:
+                    st.warning("Elli is currently closed. You cannot proceed with your order at this time.")
+                for item in menu_items.keys():
+                    price = menu_items[item]
+                    col2.write(f"{item}: {price}")
 
         elif restaurant_ellicott == "Au Bon Pain":
             au_bon_pain_opening_time = current_time.replace(hour=10, minute=30, second=0)
