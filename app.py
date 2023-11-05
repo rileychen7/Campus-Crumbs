@@ -37,8 +37,6 @@ body {
 # Use st.markdown to add the CSS for the background image
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-# Content of the Streamlit app goes here
-st.title('Streamlit App with Background Image')
 
 if page == 'Restaurants':
     st.header("Menu Selection")
