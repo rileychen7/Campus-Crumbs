@@ -63,6 +63,7 @@ if st.session_state.page == 'Home Page':
                 "Fruit Cup": "$3.99",
                 "Yogurt": "$2.49"
             }
+            menu_elli = st.button("click")
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
             else:
