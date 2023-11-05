@@ -53,17 +53,17 @@ if st.session_state.page == 'Order Now':
                 "Fruit Cup": 3.99,
                 "Yogurt": 2.49
             }
-           menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-           add_button = st.button("add")
-           add_button = True
-           if menu_elli == "Chips":
-               While add_button:
-               key = "Chips"
-               value = 2.99
-               count += 1
-               if key not in shopping_cart:
-                   shopping_cart[key] = 0
-                   shopping_cart[key] += value
+            menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
+            add_button = st.button("add")
+            add_button = True
+            if menu_elli == "Chips":
+                While add_button:
+                    key = "Chips"
+                    value = 2.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
         st.write(count)
         st.write(shopping_cart)
             for item in menu_items.keys():
