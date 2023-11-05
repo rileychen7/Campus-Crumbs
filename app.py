@@ -10,17 +10,6 @@ st.set_page_config(page_title="Campus Crumbs", page_icon="logo.png")
 if 'cart' not in st.session_state:
     st.session_state.cart = []
 
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("fooddelivery.jpeg");
-        background-size:200
-    }
-   </style>
-    """,
-    unsafe_allow_html=True
-)
 
 logo = Image.open('logo1.png')
 st.image(logo, use_column_width=True)
