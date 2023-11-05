@@ -732,18 +732,7 @@ if st.session_state.page == 'Register To Deliver':
 
 if st.session_state.page == 'Your Orders':
     st.header("Your Orders")
-    orders = pd.DataFrame({
-        'Order ID': [1, 2, 3],
-        'Items': ['Pan Asia - Protein', 'Tikka Table - Protein', 'All American Burger'],
-        'Total Price': ['$11.75', '$11.75', '$9.99'],
-        'Status': ['Delivered', 'In Progress', 'Delivered']
-    })
-
-    st.subheader("Order History")
-    st.dataframe(orders)
-
-
-
+    
 #Names
 st.markdown("---")
 st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
