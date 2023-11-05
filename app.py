@@ -344,6 +344,12 @@ if st.session_state.page == 'Restaurants':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items")
 
+    st.header("Ellicott | Greiner Hall")
+    col1, col2 = st.columns([1, 3])  
+    col1.image("TheElli.png", use_column_width=True)
+    col2.subheader("The Elli")
+    col2.write("The Elli is our convenience store in the Ellicott Food Court!")
+
     st.header("North Campus Academic Buildings")
     col1, col2 = st.columns([1, 3])  
     col1.image("champa.png", use_column_width=True)
