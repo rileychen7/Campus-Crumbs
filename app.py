@@ -142,7 +142,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks and essential personal items.")
 
     col1, col2 = st.columns([1, 3])  
-    col1.image("harriman_cafe.png", use_column_width=True)
+    col1.image("harriman_caf.png", use_column_width=True)
     col2.subheader("Harriman Café")
     col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
    
