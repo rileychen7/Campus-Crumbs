@@ -21,9 +21,31 @@ if st.button("Cart"):
 if 'page' not in st.session_state:
     st.session_state.page = 'Order Now'
 
+nav_bar_css = """
+<style>
+.sidebar .css-17h2l1e a {
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 0; /* Spacing between items */
+    transition: background-color 0.3s; /* Hover effect transition */
+}
+
+.sidebar .css-17h2l1e a:hover {
+    background-color: #f0f0f0; /* Hover background color */
+}
+</style>
+"""
+
+st.markdown(nav_bar_css, unsafe_allow_html=True)
+
+# Your Streamlit code here
 st.sidebar.header("Navigation")
 
-st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver '])
+st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver'])
+
+
+st.sidebar.header("Navigation")
+
 
 shopping_cart = {}
 count = 0
