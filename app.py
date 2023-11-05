@@ -1,6 +1,12 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
+import streamlit as st
+from datetime import datetime
+import pytz
+
+est = pytz.timezone("US/Eastern")
+current_time = datetime.now(est)
 
 def set_background(background_image):
     page_bg = '''
