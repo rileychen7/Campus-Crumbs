@@ -203,6 +203,15 @@ if st.session_state.page == 'Order Now':
                 "Fruit Salad": "$4.99"
             }
             if au_bon_pain_opening_time <= current_time <= au_bon_pain_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("Au Bon Pain is currently open from 10:30 AM to 8:30 PM.")
             else:
@@ -228,6 +237,15 @@ if st.session_state.page == 'Order Now':
                 "Vegetarian Sub": "$7.99"
             }
             if hubies_opening_time <= current_time <= hubies_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("Hubies is currently open from 5:00 PM to 10:00 PM.")
             else:
@@ -254,6 +272,15 @@ if st.session_state.page == 'Order Now':
                 "Turkey Club Wrap": "$9.99"
             }
             if wrapitup_opening_time <= current_time <= wrapitup_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("Wrap it up is currently open from 7:00 PM to 3:00 PM.")
             else:
@@ -280,6 +307,15 @@ if st.session_state.page == 'Order Now':
                 "Milkshake": "$3.99"
             }
             if sizzles_opening_time <= current_time <= sizzles_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("sizzles is currently open from 10:00 AM to 8:30 PM.")
             else:
@@ -306,6 +342,15 @@ if st.session_state.page == 'Order Now':
                 "Fruit Salad": "$3.99"
             }
             if bowl_opening_time <= current_time <= bowl_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("The Bowl is currently open from 11:00 AM to 4:000 PM.")
             else:
@@ -331,6 +376,15 @@ if st.session_state.page == 'Order Now':
                 "Mexican Rice": "$2.99"
             }
             if gnr_opening_time <= current_time <= gnr_closing_time:
+                st.session_state['count']=0
+                for key in menu_items:
+                    Y=st.button(key)
+                    if Y:
+                        st.markdown("item has been added to your cart")
+                        value=menu_items.get(key,0)
+                        st.session_state['count']+=1
+                        st.session_state['count'] *= value
+                        st.write(st.session_state['count'])
                 st.button("Proceed to Check Out")
                 st.info("Guac and Roll is currently open from 11:00 AM to 8:30 PM.")
             else:
