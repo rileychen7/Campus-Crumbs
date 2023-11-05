@@ -38,7 +38,6 @@ nav_bar_css = """
 
 st.markdown(nav_bar_css, unsafe_allow_html=True)
 
-# Your Streamlit code here
 st.sidebar.header("Navigation")
 
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Register To Deliver'])
@@ -59,7 +58,7 @@ if st.session_state.page == 'Order Now':
 
         if restaurant_ellicott == "The Elli":
             elli_opening_time = current_time.replace(hour=0, minute=0, second=0)
-            elli_closing_time = current_time.replace(hour=24, minute=0, second=0)
+            elli_closing_time = current_time.replace(hour=23, minute=59, second=59)
             col1, col2 = st.columns([1, 3]) 
             col1.image("TheElli.png", use_column_width=True)
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
