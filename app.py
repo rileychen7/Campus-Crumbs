@@ -787,25 +787,8 @@ if st.session_state.page == 'Register To Deliver':
     if st.button("Register"):
         st.write("Thank you for registering!")
             
-#if st.session_state.page == 'Your Orders':
-    #st.header("Your Orders")
-    #past_orders = [
-    #{"order_id": 1, "date": "2023-10-01", "items": ["Pizza", "Soda", "Salad"], "total": 20.0},
-    #{"order_id": 2, "date": "2023-10-15", "items": ["Burger", "Fries", "Milkshake"], "total": 15.0},
-]
-
-#st.header("Your Orders")
-
-#if past_orders:
-    #st.write("Here are your past orders:")
-
-    #for order in past_orders:
-        #st.write(f"Order ID: {order['order_id']}")
-        #st.write(f"Date: {order['date']}")
-        #st.write(f"Items: {', '.join(order['items'])}")
-        #st.write(f"Total: ${order['total']:.2f}")
-        #st.write("-----")
-
+if st.session_state.page == 'Your Orders':
+    st.header("Your Orders")
     
 #Names
 st.markdown("---")
