@@ -689,34 +689,21 @@ if st.session_state.page == 'Be A Driver':
 if st.session_state.page == 'Your Orders':
     st.header("Cart")
     
-    orders = pd.DataFrame({
-        'Order ID': [1, 2, 3],
-        'Items': ['Pan Asia - Protein', 'Tikka Table - Protein', 'All American Burger'],
-        'Total Price': ['$11.75', '$11.75', '$9.99'],
-        'Status': ['Delivered', 'In Progress', 'Delivered']
-    })
+   st.header("Your Orders")
 
-    st.subheader("Order History")
-    st.dataframe(orders)
-    
+orders = pd.DataFrame({
+    'Order ID': [1, 2, 3],
+    'Items': ['Pan Asia - Protein', 'Tikka Table - Protein', 'All American Burger'],
+    'Total Price': ['$11.75', '$11.75', '$9.99'],
+    'Status': ['Delivered', 'In Progress', 'Delivered']
+})
 
-    if st.button("Clear Cart"):
-        st.session_state.cart = []
-        st.write("Your cart has been cleared.")
+st.subheader("Order History")
+st.dataframe(orders)
 
-  
-    if st.session_state.cart:
-        st.subheader("Items in Cart")
-        for item in st.session_state.cart:
-            st.write(item)
-    else:
-        st.write("Your cart is empty.")
 
-  
-    item_name = st.text_input("Item Name")
-    item_quantity = st.number_input("Quantity", min_value=1, value=1)
-    if st.button("Add to Cart"):
-        if item_name and item_quantity:
-            item_info = f"{item_name} - Quantity: {item_quantity}"
-            st.session_state.cart.append(item_info)
+#Names
+st.markdown("---")
 
+
+st.write("Created for UB Hacking 2023 by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
