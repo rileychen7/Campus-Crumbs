@@ -144,8 +144,7 @@ if page == 'Restaurants':
     col1, col2 = st.columns([1, 3])  
     col1.image("pistachios.png", use_column_width=True)
     col2.subheader("Pistachio's")
-    col2.write(""" Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli.
-At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
+    col2.write(""" Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli. At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
 
     col1, col2 = st.columns([1, 3])  
     col1.image("tims.png", use_column_width=True)
@@ -190,7 +189,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     col2.subheader("Main Street Market")
     col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks and essential personal items.")
 
-col1, col2 = st.columns([1, 3])  
+    col1, col2 = st.columns([1, 3])  
     col1.image("main_street_market.png", use_column_width=True)
     col2.subheader("Main Street Market")
     col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks and essential personal items.")
