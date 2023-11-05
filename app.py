@@ -20,6 +20,24 @@ if st.button("Cart"):
 if st.button("Register to Deliver!"):
     page = 'Register To Deliver'
 
+elif page == "Register To Deliver":
+    st.header("Registration Form")
+    st.write("Sign up to become a Campus Crumbs delivery driver. You can also deliver via motorcycle, bike, e-bike, or scooter!")
+
+    driver_name = st.text_input("Full Name")
+    driver_email = st.text_input("Email")
+    driver_phone = st.text_input("Phone Number")
+
+    delivery_methods = ['Car', 'Motorcycle', 'Bike', 'E-bike', 'Scooter']
+    selected_delivery_method = st.selectbox("Select your delivery method", delivery_methods)
+
+    if selected_delivery_method in ['Car', 'Motorcycle']:
+        st.write("Please upload your driver's license.")
+        driver_license = st.file_uploader("Upload Driver's License")
+
+    if st.button("Register"):
+        st.write("Thank you for registering!")
+
 if 'page' not in st.session_state:
     st.session_state.page = 'Order Now'
 
