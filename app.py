@@ -62,7 +62,7 @@ if st.session_state.page == 'Order Now':
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = []
-                        value = value * count
+                    value = value * count
                     shopping_cart[key] = value
             st.write(shopping_cart)
             if elli_opening_time <= current_time <= elli_closing_time:
