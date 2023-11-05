@@ -793,6 +793,21 @@ if st.session_state.page == 'Restaurants':
     col1.image("ak.png", use_column_width=True)
     col2.subheader("AK Korean")
     col2.write("Embark on a culinary journey to the heart of Korea at our restaurant, where we serve up the ultimate in Korean comfort food. Our menu is a celebration of rich and flavorful dishes like bibimbap, bulgogi, and kimchi stew.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("bistro.png", use_column_width=True)
+    col2.subheader("Bollywood Bistro")
+    col2.write("Step into the vibrant world of Bollywood at our bistro, where we fuse the mesmerizing flavors of Indian cuisine with the energy and excitement of the film industry. From spicy curries to tandoori delights and delectable street food, our menu is a sensory feast!")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("chickmex.png", use_column_width=True)
+    col2.subheader("Chick-Mex Grill")
+    col2.write("At our Chick Mex Grill, we've redefined the art of combining the fiery flavors of Mexican cuisine with the comforting, mouthwatering goodness of tender, flame-grilled chicken. From zesty burritos and sizzling fajitas to our signature chicken bowls!")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("chopsticks.png", use_column_width=True)
+    col2.subheader("Dancing Chopsticks")
+    col2.write("Transport your taste buds to the enchanting world of Japan at our restaurant, where traditional Japanese flavors meet modern culinary artistry. Our menu showcases an exquisite selection of sushi, sashimi, teriyaki dishes, and more, all meticulously prepared with the freshest ingredients and expert craftsmanship.!")
     
     st.header("Governors")
     
