@@ -246,18 +246,6 @@ if st.session_state.page == 'Home Page':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
-        menu_items = {
-                "Chicken Alfredo Pasta": "$9.99",
-                "Caprese Panini": "$8.99",
-                "Turkey and Swiss Panini": "$7.99",
-                "Spinach and Feta Pasta": "$8.49",
-                "Italian Hoagie": "$7.99",
-                "Gourmet Grilled Cheese": "$6.99"
-            }
-
-            for item, price in menu_items.items():
-                col2.write(f"- {item}: {price}")
-                
             
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
