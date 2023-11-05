@@ -670,6 +670,15 @@ if st.session_state.page == 'Order Now':
 if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
     st.write("Sign up to become a Campus Crumbs delivery driver or biker...or walker?")
+
+    driver_name = st.text_input("Full Name")
+    driver_email = st.text_input("Email")
+    driver_phone = st.text_input("Phone Number")
+    driver_vehicle = st.text_input("Vehicle Information")
+    driver_license = st.file_uploader("Upload Driver's License")
+
+    if st.button("Register as Driver"):
+        st.write("Thank you for registering as a driver!")
             
 
 if st.session_state.page == 'Your Orders':
