@@ -850,7 +850,7 @@ if st.session_state.page == 'Register To Deliver':
 
     
     driver_name = st.text_input("Full Name")
-    driver_email = st.text_input("Email")
+    driver_email = st.text_input("UB Email")
     driver_phone = st.text_input("Phone Number")
 
     
