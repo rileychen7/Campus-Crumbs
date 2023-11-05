@@ -75,14 +75,14 @@ if st.session_state.page == 'Order Now':
             menu_elli = ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt']
     
             if menu_elli == "Chips":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Chips"
                     value = 2.99
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Chips"
                     value = 2.99
                     count -= 1
@@ -90,14 +90,14 @@ if st.session_state.page == 'Order Now':
                         shopping_cart[key] -= value
                 
             if menu_elli == "Soda":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Soda"
                     value = 1.99
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Soda"
                     value = 1.99
                     count -= 1
@@ -105,14 +105,14 @@ if st.session_state.page == 'Order Now':
                         shopping_cart[key] -= value
 
             if menu_elli == "Sandwich":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Sandwich"
                     value = 4.99
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Sandwich"
                     value = 4.99
                     count -= 1
@@ -120,14 +120,14 @@ if st.session_state.page == 'Order Now':
                         shopping_cart[key] -= value
 
             if menu_elli == "Salad":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Salad"
                     value = 5.99
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Salad"
                     value = 5.99
                     count -= 1
@@ -135,14 +135,14 @@ if st.session_state.page == 'Order Now':
                         shopping_cart[key] -= value
 
             if menu_elli == "Fruit Cup":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Fruit CUp"
                     value = 3.99
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Fruit Cup"
                     value = 3.99
                     count -= 1
@@ -150,14 +150,14 @@ if st.session_state.page == 'Order Now':
                         shopping_cart[key] -= value
 
             if menu_elli == "Yogurt":
-                if st.button("ADD")
+                if st.button("ADD"):
                     key = "Yogurt"
                     value = 2.49
                     count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                elif st.button("REMOVE")
+                elif st.button("REMOVE"):
                     key = "Yogurt"
                     value = 2.49
                     count -= 1
