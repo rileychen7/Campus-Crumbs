@@ -198,6 +198,17 @@ if st.session_state.page == 'Home Page':
             col1.image("champa.png", use_column_width=True)
             col2.subheader("Champa Sushi")
             col2.write("Order Champa Sushi in the Student Union for some fresh sushi!")
+            menu_items = {
+                "California Roll": "$8.99",
+                "Spicy Tuna Roll": "$9.99",
+                "Salmon Nigiri (2 pieces)": "$7.99",
+                "Sashimi Platter": "$15.99",
+                "Teriyaki Chicken Bento Box": "$12.99",
+                "Vegetarian Tempura Roll": "$10.99"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
 
         elif restaurant_north == "Jamba":
             col1, col2 = st.columns([1, 3])  
