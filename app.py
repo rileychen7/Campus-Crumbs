@@ -449,6 +449,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Tikka Table")
             col2.write("Traditional dishes with flavorful spices from the different regions of India.")
             col2.subheader("Menu")
+            menu_items_tikka = {
+        "Chicken Tikka Masala": "$12.99",
+        "Paneer Butter Masala": "$11.99",
+        "Lamb Rogan Josh": "$13.99",
+        "Vegetable Biryani": "$10.99",
+        "Chana Masala": "$9.99",
+        "Garlic Naan": "$2.99"
+    }
+
+    for item, price in menu_items_tikka.items():
+        col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "1846 Grill":
             col1, col2 = st.columns([1, 3])  
@@ -463,6 +474,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Pan Asia")
             col2.write("Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.")
             col2.subheader("Menu")
+            menu_items_panasia = {
+        "General Tso's Chicken": "$9.99",
+        "Bibimbap": "$10.99",
+        "Taiwanese Beef Noodle Soup": "$8.99",
+        "Kimchi Fried Rice": "$7.99",
+        "Shrimp Lo Mein": "$11.99",
+        "Kung Pao Tofu": "$9.49"
+    }
+
+    for item, price in menu_items_panasia.items():
+        col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Noodle Pavilion":
             col1, col2 = st.columns([1, 3])  
