@@ -702,4 +702,4 @@ st.dataframe(orders)
 st.markdown("---")
 
 
-st.write("Created for UB Hacking 2023 by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
+st.write("Created for [UB Hacking 2023](https://www.ubhacking.com/) by Riley Chen, Johnny Chen, Animesh Saha, Neeraj Arde")
