@@ -274,12 +274,12 @@ if st.session_state.page == 'Restaurants':
     col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
 
     # Governors
-    st.header("Governors")
+     st.header("Governors")
     col1, col2 = st.columns([1, 3])  
-    col1.image("governors_dining_center.png", use_column_width=True)
-    col2.subheader("Governors Dining Center")
-    col2.write("Students from Dewey, Roosevelt, Clinton, and Lehman Halls will find something for every appetite. Our all-you-care-to-eat dinner choices range from selections in the Comfort Foods section to our International Station. Favorites such as pizza, pasta bar, hand-carved meats, signature salads, health bar, hot soups, and vegetarian/vegan meals round out the selections. Of course, we can't forget to tell you about the desserts — there's a wide selection, so there's bound to be something to satisfy your sweet tooth.")
-
+    col1.image("the_cellar.png", use_column_width=True)
+    col2.subheader("The Cellar")
+    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
+    
     col1, col2 = st.columns([1, 3])  
     col1.image("tt.png", use_column_width=True)
     col2.subheader("Teddy's")
