@@ -357,7 +357,7 @@ if st.session_state.page == 'Home Page':
         col1, col2 = st.columns([1, 3])  
         col1.image("the_cellar.png", use_column_width=True)
         col2.subheader("The Cellar")
-        col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
+        col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governor's residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
             
         col1, col2 = st.columns([1, 3])  
         col1.image("tt.png", use_column_width=True)
@@ -636,7 +636,7 @@ if st.session_state.page == 'Home Page':
             col1, col2 = st.columns([1, 3])  
             col1.image("the_cellar.png", use_column_width=True)
             col2.subheader("The Cellar")
-            col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
+            col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governor's residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
             col2.subheader("Menu")
             menu_items = {
                 "Pancakes": "$6.99",
@@ -750,7 +750,7 @@ if st.session_state.page == 'Restaurants':
     col1, col2 = st.columns([1, 3])  
     col1.image("the_cellar.png", use_column_width=True)
     col2.subheader("The Cellar")
-    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
+    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governor's residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
 
     st.header("South Campus")
 
@@ -811,7 +811,7 @@ if st.session_state.page == 'Restaurants':
     col1, col2 = st.columns([1, 3])  
     col1.image("the_cellar.png", use_column_width=True)
     col2.subheader("The Cellar")
-    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
+    col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governor's residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
     
     col1, col2 = st.columns([1, 3])  
     col1.image("tt.png", use_column_width=True)
