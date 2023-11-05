@@ -78,7 +78,7 @@ if st.session_state.page == 'Order Now':
             for key in menu_items:
                 Y=st.button(key)
                 if Y:
-                    st.Markdown("item has been added to your cart")
+                    st.markdown("f{key} has been added to your cart")
                     value=menu_items.get(key,0)
                     st.session_state['count']+=1
                     st.session_state['count'] *= value
