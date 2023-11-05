@@ -41,7 +41,7 @@ if st.session_state.page == 'Home Page':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
-    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'The Commons','South Campus', 'Governors','Show All Restaurants'])
+    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings', 'South Campus', 'Governors','Show All Restaurants','The Commons'])
     if delivery_location == 'Ellicott | Greiner Hall':
         st.markdown("You've selected delivery to Ellicott.")
         restaurant_ellicott = st.selectbox("Select a restaurant in Ellicott", ['The Elli', 'Au Bon Pain', 'Hubies', 'Wrap it Up', 'Sizzles', 'The Bowl', 'Guac and Roll', 'Perks'])
@@ -554,8 +554,10 @@ if st.session_state.page == 'Home Page':
                 
     if delivery_location == 'The Commons':
         st.markdown("You've selected delivery to The Commons.")
-        restaurant_south = st.selectbox("Select a restaurant from The Commons", ['Poke Factory', 'AK Korean', 'Dancing Chopsticks','Bollywood Bistro','Chick-Mex Grill','La Rosa', 'Young Chow'])
+        restaurant_commons = st.selectbox("Select a restaurant from The Commons", ['Poke Factory', 'AK Korean', 'Dancing Chopsticks','Bollywood Bistro','Chick-Mex Grill','La Rosa', 'Young Chow'])
         st.header("The Commons")
+
+        
         
     if delivery_location == 'South Campus':
         st.markdown("You've selected delivery to South Campus.")
