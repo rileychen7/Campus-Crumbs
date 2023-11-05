@@ -86,6 +86,10 @@ if st.session_state.page == 'Order Now':
             
             
             st.write(main())
+            for key in menu_items:
+                value=menu_items.get(key,0)
+                value=main()*value
+            st.write(value)
     
             if menu_elli == "Chips":
                 if st.button("ADD"):
