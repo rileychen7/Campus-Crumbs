@@ -13,7 +13,7 @@ if page == 'Home Page':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
     
-    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hal', 'North Campus Academic Buildings'])
+    delivery_location = st.selectbox("Select a Restaurant location", ['Ellicott | Greiner Hall', 'North Campus Academic Buildings'])
     if delivery_location == 'Ellicott | Greiner Hall';
          st.markdown("You've selected delivery to Ellicott.")
     elif delivery_location == 'North Campus Academic Buildings':
