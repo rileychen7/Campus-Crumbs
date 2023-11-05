@@ -60,7 +60,6 @@ if st.session_state.page == 'Order Now':
                 if key not in shopping_cart:
                     shopping_cart[key] = []
                 shopping_cart[key].append(value)
-            st.write(shopping_cart)
             
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
