@@ -27,8 +27,6 @@ st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your O
 
 shopping_cart = {}
 count = 0
-st.write(count)
-st.write(shopping_cart)
 
 if st.session_state.page == 'Order Now':
     st.header("Welcome to Campus Crumbs!")
@@ -64,8 +62,6 @@ if st.session_state.page == 'Order Now':
                     if key not in shopping_cart:
                         shopping_cart[key] = 0
                     shopping_cart[key] += value
-                st.write(count)
-                st.write(shopping_cart)
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
@@ -665,9 +661,6 @@ if st.session_state.page == 'Order Now':
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
-
-st.write(count)
-st.write(shopping_cart)
 
 if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
