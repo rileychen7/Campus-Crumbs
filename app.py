@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-background_image_path = "food.jpeg"
+background_image_path = 'food.jpeg'
 
 css = f"""
     <style>
