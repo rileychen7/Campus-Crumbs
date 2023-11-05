@@ -1,4 +1,3 @@
-import pandas as pd
 from PIL import Image
 import streamlit as st
 from datetime import datetime
@@ -31,14 +30,14 @@ if st.button("Cart"):
 
 
 if 'page' not in st.session_state:
-    st.session_state.page = 'Home Page'
+    st.session_state.page = 'Order Now'
 
 st.sidebar.header("Navigation")
 
 
-st.session_state.page = st.sidebar.selectbox("Navigation", ['Home Page', 'Restaurants', 'Your Orders'])
+st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Restaurants', 'Your Orders'])
 
-if st.session_state.page == 'Home Page':
+if st.session_state.page == 'Order Now':
     st.header("Welcome to Campus Crumbs!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
