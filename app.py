@@ -26,6 +26,7 @@ st.sidebar.header("Navigation")
 st.session_state.page = st.sidebar.selectbox("Navigation", ['Order Now', 'Your Orders', 'Be A Driver'])
 
 shopping_cart = {}
+count = 0
 
 if st.session_state.page == 'Order Now':
     st.header("Welcome to Campus Crumbs!")
@@ -53,16 +54,16 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": 2.49
             }
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-            count = 0
-            value=0
-            add_item=st.button("ADD")
-            for i in range(len(menu_elli)):
-                if add_item:
-                    count+=1
-                    menu_items["Chips"]=menu_items.get("Chips",0)
-                    value=menu_items.get("Chips",0)
-                    value=value*count
-            col2.write(value)
+            if menu_elli == "Chips":
+                if st.button("Add Item"):
+                    key = "Chips"
+                    value = 2.99
+                    count += 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = 0
+                    shopping_cart[key] += value
+            st.write(count)
+            st.write(shopping_cart)
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
