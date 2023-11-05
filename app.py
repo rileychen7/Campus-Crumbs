@@ -793,7 +793,6 @@ if st.session_state.page == 'Your Orders':
     past_orders = [
     {"order_id": 1, "date": "2023-10-01", "items": ["Pizza", "Soda", "Salad"], "total": 20.0},
     {"order_id": 2, "date": "2023-10-15", "items": ["Burger", "Fries", "Milkshake"], "total": 15.0},
-    # Add more orders as needed
 ]
 
 st.header("Your Orders")
