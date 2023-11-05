@@ -1,11 +1,21 @@
 import pandas as pd
 import streamlit as st
 
-if 'cart' not in st.session_state:
-    st.session_state.cart = []
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
+background_image_path = "imagebg.jpeg"
 
+css = f"""
+    <style>
+        body {{
+            background-image: url('imagebg.jpeg');
+            background-size: cover;
+        }}
+    </style>
+"""
+
+if 'cart' not in st.session_state:
+    st.session_state.cart = []
 
 
 st.title("StudiFood")
