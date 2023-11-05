@@ -443,7 +443,7 @@ if st.session_state.page == 'Home Page':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
             
-        elif restaurant_north == "Tikka Table":
+        elif restaurant_north == "Tikka":
             col1, col2 = st.columns([1, 3])  
             col1.image("tikka.png", use_column_width=True)
             col2.subheader("Tikka Table")
