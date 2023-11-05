@@ -690,8 +690,7 @@ if st.session_state.page == 'Be A Driver':
 
 if st.session_state.page == 'Your Orders':
     st.header("Cart")
-    
-   st.header("Your Orders")
+    st.header("Your Orders")
 
 orders = pd.DataFrame({
     'Order ID': [1, 2, 3],
