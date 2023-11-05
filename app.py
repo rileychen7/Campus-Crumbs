@@ -8,9 +8,9 @@ st.set_page_config(page_title="StudiFood", page_icon="🍔")
 st.title("StudiFood")
 
 st.sidebar.header("Navigation")
-page = st.sidebar.selectbox("Select a page", ['Page 1', 'Page 2', 'Page 3'])
+page = st.sidebar.selectbox("Select a page", [Home Page', 'Restaurants', 'Your Orders'])
 
-if page == 'Page 1':
+if page == 'Home Page':
     st.header("Welcome to StudiFood!")
     st.write("Order delicious campus food and have it delivered to your dorm.")
 
@@ -34,7 +34,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 # Content of the Streamlit app goes here
 st.title('Streamlit App with Background Image')
 
-if page == 'Page 2':
+if page == 'Restaurants':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items.")
     
@@ -147,7 +147,7 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     
 
 
-if page == 'Page 3':
+if page == 'Your Cart':
     st.header("Cart")
     st.write("View your previous orders and their status")
 
