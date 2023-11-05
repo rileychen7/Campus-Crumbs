@@ -3,7 +3,7 @@ import streamlit as st
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
-background_image = "./food.png"
+background_image = "food.jpeg"
 
 st.image(background_image, use_column_width=True)
 
