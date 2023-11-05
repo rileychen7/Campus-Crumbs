@@ -79,13 +79,14 @@ if st.session_state.page == 'Order Now':
             
             def main():
                 st.title('Button Counter with Dictionary')
+                click_me=st.button('Click me')
             
                 if 'menu_items' not in st.session_state:
                     st.session_state['menu_items'] = {'value': 1}
             
                 count = st.session_state['count']
                 value = st.session_state['menu_items']['value']
-                click_me=st.button('Click me')
+                
                 if click_me:
                     count = count + 1 if 'count' in st.session_state else 1
                     st.session_state['count'] = count
