@@ -216,6 +216,17 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Jamba")
             col2.write("Stop in and enjoy the world's freshest, most fruit-filling experience. Jamba in the Student Union has a wide variety for smoothies, fruit juices and so much more.")
             col2.subheader("Menu")
+            menu_items = {
+                "Strawberry Banana Smoothie": "$4.99",
+                "Mango-a-Go-Go Smoothie": "$5.99",
+                "Acai Super Antioxidant Bowl": "$6.99",
+                "Fresh Squeezed Orange Juice": "$3.99",
+                "Greek Yogurt Parfait": "$4.99",
+                "Protein Power Smoothie": "$6.49"
+            }
+
+            for item, price in menu_items.items():
+                col2.write(f"- {item}: {price}")
             
         elif restaurant_north == "Moes":
             col1, col2 = st.columns([1, 3])  
