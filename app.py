@@ -53,13 +53,13 @@ if st.session_state.page == 'Order Now':
                 "Yogurt": "$2.49"
             }
             menu_elli = st.selectbox("Select item from menu", ['Chips', 'Soda', 'Sandwich', 'Salad', 'Fruit Cup', 'Yogurt'])
-            add_elli = st.button("click")
             if menu_elli == "Chips":
-                key = "Chips"
-                value = "2.99"
-                if key not in shopping_cart:
-                    shopping_cart[key] = []
-                shopping_cart[key].append(value)
+                if add_elli = st.button("Add Item")
+                    key = "Chips"
+                    value = 1
+                    if key not in shopping_cart:
+                        shopping_cart[key] = []
+                    shopping_cart[key].append(value)
             
             if elli_opening_time <= current_time <= elli_closing_time:
                 st.info("Elli is currently open from 12 PM to 9 PM.")
