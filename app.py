@@ -10,17 +10,16 @@ st.set_page_config(page_title="StudiFood", page_icon="🍔")
 
 st.title("StudiFood")
 
-# Create a button to redirect to the Your Orders page
 if st.button("Cart"):
     st.session_state.page = 'Your Orders'
 
-# Check if the page is selected and set a default page
+
 if 'page' not in st.session_state:
     st.session_state.page = 'Home Page'
 
 st.sidebar.header("Navigation")
 
-# Modify the selectbox to reflect the session state
+
 st.session_state.page = st.sidebar.selectbox("Select a page", ['Home Page', 'Restaurants', 'Your Orders'])
 
 if st.session_state.page == 'Home Page':
@@ -198,7 +197,7 @@ if st.session_state.page == 'Your Orders':
         st.session_state.cart = []
         st.write("Your cart has been cleared.")
 
-    # Display the cart content
+  
     if st.session_state.cart:
         st.subheader("Items in Cart")
         for item in st.session_state.cart:
@@ -206,7 +205,7 @@ if st.session_state.page == 'Your Orders':
     else:
         st.write("Your cart is empty.")
 
-    # Add input fields and button to add items to the cart
+  
     item_name = st.text_input("Item Name")
     item_quantity = st.number_input("Quantity", min_value=1, value=1)
     if st.button("Add to Cart"):
