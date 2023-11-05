@@ -57,7 +57,9 @@ if st.session_state.page == 'Order Now':
             if menu_elli == "Chips":
                 if add_item:
                     key = "Chips"
-                    value = 1
+                    value = "2.99"
+                    count = 0
+                    count += 1
                     if key not in shopping_cart:
                         shopping_cart[key] = []
                     shopping_cart[key].append(value)
