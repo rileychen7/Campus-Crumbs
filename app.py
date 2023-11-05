@@ -37,8 +37,8 @@ if st.session_state.page == 'Home Page':
             col1.image("TheElli.png", use_column_width=True)
             col2.button("The Elli")
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
-            if col2.button("The Elli"):
-                st.write("menu")
+            st.subheader("The menu")
+            st.write("item 1. $10\n","item 2. $20")
 
         elif restaurant_ellicott == "Au Bon Pain":
             col1, col2 = st.columns([1, 3])  
