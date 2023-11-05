@@ -100,7 +100,48 @@ At Bravo Pasta, our culinary team is blending the freshest and finest quality in
     col1.image("the_cellar.png", use_column_width=True)
     col2.subheader("The Cellar")
     col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
-        
+
+     st.header("South Campus")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("main_street_store.png", use_column_width=True)
+    col2.subheader("Main Street Store")
+    col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks and essential personal items.")
+
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("harriman_caf.png", use_column_width=True)
+    col2.subheader("Harriman Café")
+    col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("main_street_market.png", use_column_width=True)
+    col2.subheader("Main Street Market")
+    col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks and essential personal items.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("whispers_caf_at_abbott.png", use_column_width=True)
+    col2.subheader("Whispers Café at Abbott")
+    col2.write ("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads. ")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("whispers_caf_at_abbott.png", use_column_width=True)
+    col2.subheader("Whispers Café at Abbott")
+    col2.write ("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads. ")
+
+    #Governors
+    st.header("Governors")
+    col1, col2 = st.columns([1, 3])  
+    col1.image("governors_dining_center.png", use_column_width=True)
+    col2.subheader("Governors Dining Center")
+    col2.write ("Students from Dewey, Roosevelt, Clinton and Lehman Halls will find something for every appetite. Our all-you-care-to-eat dinner choices range from selections in the Comfort Foods section to our International Station. Favorites such as pizza, pasta bar, hand-carved meats, signature salads, health bar, hot soups and vegetarian/vegan meals round out the selections. Of course, we can't forget to tell you about the desserts — there's a wide selection, so there's bound to be something to satisfy your sweet tooth.")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("tt.png", use_column_width=True)
+    col2.subheader("Teddy's")
+    col2.write ("Teddy's is our convenience store in Governors!")
+
+
 if page == 'Your Orders':
     st.header("Cart")
     st.write
