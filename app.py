@@ -1,4 +1,4 @@
- import pandas as pd
+import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
@@ -795,7 +795,7 @@ if st.session_state.page == 'Restaurants':
     col1.image("bistro.png", use_column_width=True)
     col2.subheader("Bollywood Bistro")
     col2.write("Step into the vibrant world of Bollywood at our bistro, where we fuse the mesmerizing flavors of Indian cuisine with the energy and excitement of the film industry. From spicy curries to tandoori delights and delectable street food, our menu is a sensory feast!")
-
+    
     col1, col2 = st.columns([1, 3])  
     col1.image("chickmex.png", use_column_width=True)
     col2.subheader("Chick-Mex Grill")
