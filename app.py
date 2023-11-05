@@ -56,7 +56,7 @@ if st.session_state.page == 'Order Now':
             add_item = st.button("Add Item")
             if menu_elli == "Chips":
                 count = 0
-                if add_item:
+                while add_item == True:
                     key = "Chips"
                     value = 2.99
                     count += 1
