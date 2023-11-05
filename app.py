@@ -769,8 +769,31 @@ if st.session_state.page == 'Restaurants':
     col2.subheader("Whispers Café at Abbott")
     col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
 
-    # Governors
+    st.header("The Commons")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("youngchow.png", use_column_width=True)
+    col2.subheader("Young Chow")
+    col2.write("Get delicious chinese food!")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("poke.png", use_column_width=True)
+    col2.subheader("Poke Factory")
+    col2.write("Order the best poke bowl on UB today!")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("larosa.png", use_column_width=True)
+    col2.subheader("La Rosa")
+    col2.write("Craving Pizza? Order La Rosas now!")
+
+    col1, col2 = st.columns([1, 3])  
+    col1.image("ak.png", use_column_width=True)
+    col2.subheader("AK Korean")
+    col2.write("Want amazing Korean comfort food? Come to AK today!")
+
+    
     st.header("Governors")
+    
     col1, col2 = st.columns([1, 3])  
     col1.image("the_cellar.png", use_column_width=True)
     col2.subheader("The Cellar")
