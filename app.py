@@ -223,6 +223,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Moe's")
             col2.write("Moe’s Southwest Grill in the Student Union is a fun and engaging fast-casual concept serving a wide variety of fresh, made-to-order southwest fare")
             col2.subheader("Menu")
+            
         elif restaurant_north == "Pistachios":
             col1, col2 = st.columns([1, 3])  
             col1.image("pistachios.png", use_column_width=True)
@@ -230,36 +231,42 @@ if st.session_state.page == 'Home Page':
             col2.write("""Pistachio's is the perfect place to go for delicious pasta dishes from Bravo Pasta or a hot panini from the Bread Box Deli.
             At Bravo Pasta, our culinary team is blending the freshest and finest quality ingredients to make hearty pasta dishes!""")
             col2.subheader("Menu")
+            
         elif restaurant_north == "Tims":
             col1, col2 = st.columns([1, 3])  
             col1.image("tims.png", use_column_width=True)
             col2.subheader("Tim Hortons")
             col2.write("Hot, fresh coffee and delicious baked goods. Serving a variety of muffins, bagels, doughnuts and more!")
             col2.subheader("Menu")
+            
         elif restaurant_north == "Kali":
             col1, col2 = st.columns([1, 3])  
             col1.image("kali.png", use_column_width=True)
             col2.subheader("Kali Orexi")
             col2.write("Mediterranean cuisine and fare from Middle Eastern countries. Here you will find marinated choice cuts of meats, ancient grains, and regional spices.")
             col2.subheader("Menu")
+            
         elif restaurant_north == "Tikka Table":
             col1, col2 = st.columns([1, 3])  
             col1.image("tikka.png", use_column_width=True)
             col2.subheader("Tikka Table")
             col2.write("Traditional dishes with flavorful spices from the different regions of India.")
             col2.subheader("Menu")
+            
         elif restaurant_north == "1846 Grill":
             col1, col2 = st.columns([1, 3])  
             col1.image("1846.png", use_column_width=True)
             col2.subheader("1846 Grill")
             col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
             col2.subheader("Menu")
-        elif restaurant_north == "Panasia":
+            
+        elif restaurant_north == "Pan Asia":
             col1, col2 = st.columns([1, 3])  
             col1.image("panasia.png", use_column_width=True)
             col2.subheader("Pan Asia")
             col2.write("Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.")
             col2.subheader("Menu")
+            
         elif restaurant_north == "Noodle Pavilion":
             col1, col2 = st.columns([1, 3])  
             col1.image("noodle.png", use_column_width=True)
@@ -278,36 +285,39 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Main Street Store")
             col2.write("The Main Street Store is located inside Goodyear Dining Center on South Campus. The store carries a variety of beverages, snacks, and essential personal items.")
             col2.subheader("Menu")
+            
         elif restaurant_south == "Harriman Cafe":
             col1, col2 = st.columns([1, 3])  
             col1.image("harriman_caf.png", use_column_width=True)
             col2.subheader("Harriman Café")
             col2.write("At Harriman Cafe in Harriman Hall, you've got the option to sit and eat or take your food to go. We've got a tempting selection of sandwiches, hot pizzas, and fresh fruit — all packaged to go. But if you've got the time to sit, pull up a chair and savor your meal.")
-
+            col2.subheader("Menu")
         elif restaurant_south == "Whispers Cafe at Abbott":
             col1, col2 = st.columns([1, 3])  
             col1.image("whispers_caf_at_abbott.png", use_column_width=True)
             col2.subheader("Whispers Café at Abbott")
             col2.write("Located inside Abbott Hall (Health Sciences Library), you'll find hand-crafted Starbucks beverages and freshly-brewed coffees along with delicious baked goods and a variety of grab-and-go sandwiches and salads.")
-
+            col2.subheader("Menu")
 
     if delivery_location == 'Governors':
         st.markdown("You've selected delivery to Governers.")
         restaurant_governers = st.selectbox("Select a restaurant from Governers", ["Teddy's", "The Cellar"])
         st.header("Governors")
-        
+            
         if restaurant_governers == "Teddy's":
             col1, col2 = st.columns([1, 3])  
             col1.image("tt.png", use_column_width=True)
             col2.subheader("Teddy's")
             col2.write("Teddy's is our convenience store in Governors!")
-
+            col2.subheader("Menu")
+            
         elif restaurant_governers == "The Cellar":
             col1, col2 = st.columns([1, 3])  
             col1.image("the_cellar.png", use_column_width=True)
             col2.subheader("The Cellar")
             col2.write("Bring your appetite, we'll do the rest. The Cellar is your classic casual diner and a UB tradition for Governors residents. We're serving up all your breakfast favorites along with an expanded lunch menu!")
-
+            col2.subheader("Menu")
+            
 if st.session_state.page == 'Restaurants':
     st.header("Menu Selection")
     st.write("Browse the menu and select your favorite items")
