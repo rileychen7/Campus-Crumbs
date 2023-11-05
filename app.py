@@ -474,12 +474,12 @@ if st.session_state.page == 'Home Page':
             col2.write("Classic American comfort food – from breakfast to burgers and everything in between.")
             col2.subheader("Menu")
             menu_items = {
-        "Chicken Sandwhich": "$12.99",
-        "Grilled Cheese": "$11.99",
-        "BBQ Pulled Pork Sandwich": "$12.99",
-        "Vegetarian Grilled Portobello": "$14.99",
-        "Grilled Asparagus": "$6.99",
-        "Garlic Mashed Potatoes": "$4.99"
+                "Chicken Sandwhich": "$12.99",
+                "Grilled Cheese": "$11.99",
+                "BBQ Pulled Pork Sandwich": "$12.99",
+                "Vegetarian Grilled Portobello": "$14.99",
+                "Grilled Asparagus": "$6.99",
+                "Garlic Mashed Potatoes": "$4.99"
     }
 
             for item, price in menu_items.items():
@@ -492,12 +492,12 @@ if st.session_state.page == 'Home Page':
             col2.write("Flavors from China, Korea, and Taiwan abound in a variety of dishes on a rotating basis.")
             col2.subheader("Menu")
             menu_items = {
-        "General Tso's Chicken": "$9.99",
-        "Bibimbap": "$10.99",
-        "Taiwanese Beef Noodle Soup": "$8.99",
-        "Kimchi Fried Rice": "$7.99",
-        "Shrimp Lo Mein": "$11.99",
-        "Kung Pao Tofu": "$9.49"
+                "General Tso's Chicken": "$9.99",
+                "Bibimbap": "$10.99",
+                "Taiwanese Beef Noodle Soup": "$8.99",
+                "Kimchi Fried Rice": "$7.99",
+                "Shrimp Lo Mein": "$11.99",
+                "Kung Pao Tofu": "$9.49"
     }
 
             for item, price in menu_items.items():
