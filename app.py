@@ -509,7 +509,7 @@ if st.session_state.page == 'Home Page':
             col2.subheader("Noodle Pavilion")
             col2.write("Popular Japanese and Vietnamese bowl-style cuisine with a wide selection of fresh options.")
             col2.subheader("Menu")
-        menu_items = {
+            menu_items = {
         "Pad Thai": "$10.99",
         "Japanese Ramen": "$11.99",
         "Spaghetti Carbonara": "$12.99",
