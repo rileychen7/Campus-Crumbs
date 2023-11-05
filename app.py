@@ -438,7 +438,7 @@ if st.session_state.page == 'Home Page':
                 "Baklava": "$3.99",
                 "Kebab Plate": "$12.99",
                 "Greek Salad": "$6.99"
-        }
+            }
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
@@ -450,13 +450,13 @@ if st.session_state.page == 'Home Page':
             col2.write("Traditional dishes with flavorful spices from the different regions of India.")
             col2.subheader("Menu")
             menu_items = {
-        "Chicken Tikka Masala": "$12.99",
-        "Paneer Butter Masala": "$11.99",
-        "Lamb Rogan Josh": "$13.99",
-        "Vegetable Biryani": "$10.99",
-        "Chana Masala": "$9.99",
-        "Garlic Naan": "$2.99"
-    }
+                "Chicken Tikka Masala": "$12.99",
+                "Paneer Butter Masala": "$11.99",
+                "Lamb Rogan Josh": "$13.99",
+                "Vegetable Biryani": "$10.99",
+                "Chana Masala": "$9.99",
+                "Garlic Naan": "$2.99"
+            }
 
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
