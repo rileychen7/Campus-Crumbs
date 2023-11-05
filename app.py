@@ -666,6 +666,9 @@ if st.session_state.page == 'Order Now':
             for item, price in menu_items.items():
                 col2.write(f"- {item}: {price}")
 
+st.write(count)
+st.write(shopping_cart)
+
 if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
     st.write("Sign up to become a Campus Crumbs delivery driver. You can also deliver via motorcycle, bike, e-bike, or scooter!")
