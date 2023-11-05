@@ -11,7 +11,7 @@ css = f"""
         }}
     </style>
 """
-
+st.markdown(css, unsafe_allow_html=True)
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
 if 'cart' not in st.session_state:
