@@ -48,8 +48,23 @@ if st.session_state.page == 'Home Page':
             col2.button("The Elli")
             col2.write("The Elli is our convenience store in the Ellicott Food Court!")
             st.subheader("The Menu")
-            if st.button("Chips: $2.00"):
-                st.write("Chips are available")
+    menu_items = {
+        "Chips": "$2.00",
+        "Soda": "$1.50",
+        "Candy Bar": "$1.25",
+        "Bottled Water": "$1.00",
+        "Sandwich": "$3.50",
+        "Muffin": "$2.25",
+        "Coffee (Small)": "$1.75",
+        "Coffee (Large)": "$2.25",
+        "Fresh Fruit": "$2.50",
+        "Granola Bar": "$1.75",
+        "Yogurt Cup": "$2.50",
+        "Snack Mix": "$2.25",
+    }
+
+    for item, price in menu_items.items():
+        st.write(f"{item}: {price}")
 
         elif restaurant_ellicott == "Au Bon Pain":
             col1, col2 = st.columns([1, 3])  
