@@ -18,7 +18,9 @@ if st.button("Cart"):
     st.session_state.page = 'Your Orders'
 
 if st.button("Register to Deliver!"):
-     Order Now= 'Register To Deliver'
+    st.session_state.page = 'Register To Deliver'
+
+
 
 if 'page' not in st.session_state:
     st.session_state.page = 'Order Now'
