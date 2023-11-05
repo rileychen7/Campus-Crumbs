@@ -70,9 +70,6 @@ if st.session_state.page == 'Order Now':
             for item in menu_items.keys():
                 price = menu_items[item]
                 col2.write(f"{item}: {price}")
-            for item in menu_items.keys():
-                price = menu_items[item]
-                col2.write(f"{item}: {price}")
 
         elif restaurant_ellicott == "Au Bon Pain":
             au_bon_pain_opening_time = current_time.replace(hour=10, minute=30, second=0)
