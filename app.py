@@ -670,11 +670,18 @@ if st.session_state.page == 'Be A Driver':
     st.header("Driver Registration")
     st.write("Sign up to become a Campus Crumbs delivery driver. You can also dash via motorcycle, bike, e-bike, or scooter!")
 
+    
     driver_name = st.text_input("Full Name")
     driver_email = st.text_input("Email")
     driver_phone = st.text_input("Phone Number")
-    driver_vehicle = st.text_input("Vehicle Information")
-    driver_license = st.file_uploader("Upload Driver's License")
+
+    
+    delivery_methods = ['Car', 'Motorcycle', 'Bike', 'E-bike', 'Scooter']
+    selected_delivery_method = st.selectbox("Select your delivery method", delivery_methods)
+
+    if selected_delivery_method in ['Car', 'Motorcycle']:
+        st.write("Please upload your driver's license.")
+        driver_license = st.file_uploader("Upload Driver's License")
 
     if st.button("Register as Driver"):
         st.write("Thank you for registering as a driver!")
