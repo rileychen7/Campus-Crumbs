@@ -808,7 +808,7 @@ if st.session_state.page == 'Restaurants':
     col1.image("chopsticks.png", use_column_width=True)
     col2.subheader("Dancing Chopsticks")
     col2.write("Transport your taste buds to the enchanting world of Japan at our restaurant, where traditional Japanese flavors meet modern culinary artistry. Our menu showcases an exquisite selection of sushi, sashimi, teriyaki dishes, and more, all meticulously prepared with the freshest ingredients and expert craftsmanship.!")
-    
+
     st.header("Governors")
     
     col1, col2 = st.columns([1, 3])  
