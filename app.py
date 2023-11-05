@@ -1,10 +1,12 @@
 import pandas as pd
 import streamlit as st
 
-if 'cart' not in st.session_state:
-    st.session_state.cart = []
+
 
 st.set_page_config(page_title="StudiFood", page_icon="🍔")
+
+if 'cart' not in st.session_state:
+    st.session_state.cart = []
 
 st.title("StudiFood")
 
