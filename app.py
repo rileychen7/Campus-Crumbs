@@ -17,7 +17,7 @@ st.image(logo, use_column_width=True)
 if st.button("Cart"):
     st.session_state.page = 'Your Orders'
 
-if st.button("Register to Deliver!")
+if st.button("Register to Deliver!"):
     page = 'Register To Deliver'
 
 if 'page' not in st.session_state:
